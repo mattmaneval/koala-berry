@@ -5,13 +5,13 @@ import theme from '../../styles/theme';
 const { color, fonts } = theme;
 
 const H1Alt = styled.div`
-  display: inline;
+  display: inline-block;
   font-family: ${fonts.fontBold};
-  font-size: 4em;
+  font-size: 2.65em;
   line-height: 1.2;
 
   @media ${media.secondary} {
-    font-size: 2em;
+    font-size: 1.65em;
   }
 
   span {

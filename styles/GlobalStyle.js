@@ -56,7 +56,7 @@ const GlobalStyle = createGlobalStyle`
     font-family: ${fonts.title};
     font-size: 10em;
     line-height: 0;
-    margin-bottom: -1.2em;
+    margin-bottom: 0.1em;
     text-transform: uppercase;
 
     @media ${media.primary} {
@@ -64,7 +64,7 @@ const GlobalStyle = createGlobalStyle`
     }
 
     @media ${media.secondary} {
-      font-size: 3em;
+      font-size: 4em;
     }
   }
 
@@ -157,8 +157,8 @@ const GlobalStyle = createGlobalStyle`
   }
 
   .swiper-slide {
-    width: 25em !important;
-    height: 25em !important;
+    width: 20em !important;
+    height: 20em !important;
 
     @media ${media.secondary} {
       width: 15em !important;

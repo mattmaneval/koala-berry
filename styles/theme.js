@@ -22,11 +22,11 @@ const theme = {
   // Color
   color: {
     background: '#FFFFFF',
+    backgroundAlt: '#B8EBD0',
     foreground: '#000000',
     foregroundAlt: '#5d2096',
-    backgroundTert: '#513c97',
-    foregroundTert: '#f3bb2c',
-    callout: '#3b5998',
+    foregroundTert: '#E43F6F',
+    callout: '#E43F6F',
     foregroundDim: '#a3a3a3',
   },
 
