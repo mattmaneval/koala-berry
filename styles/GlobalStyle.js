@@ -38,7 +38,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   section {
-    padding: 3em 0;
+    padding: 6em 0;
     display: inline-block;
     position: relative;
     clear: both;
@@ -157,12 +157,12 @@ const GlobalStyle = createGlobalStyle`
   }
 
   .swiper-slide {
-    width: 20em !important;
-    height: 20em !important;
+    width: 26em !important;
+    // height: 20em !important;
 
     @media ${media.secondary} {
-      width: 15em !important;
-      height: 15em !important;
+      width: 18em !important;
+      // height: 15em !important;
     }
   }
 `;
