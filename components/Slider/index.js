@@ -2,6 +2,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import ChevronRight from '../icons/ChevronRight';
 import styled from 'styled-components';
+import media from '../../styles/media';
 import theme from '../../styles/theme';
 
 const { color, fonts } = theme;
@@ -12,21 +13,32 @@ const Slide = styled.div`
   display: flex;
   flex-direction: column;
   font-family: ${fonts.fontBlack};
-
   padding: 2em;
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: space-between;
 
+  @media ${media.secondary} {
+    padding: 1.25em;
+  }
+
   .card-title {
     font-size: 2em;
+
+    @media ${media.secondary} {
+      font-size: 1.6em;
+    }
   }
 
   .subtitle {
     font-size: 1.85em;
     font-family: ${fonts.title};
     letter-spacing: 0.05em;
+
+    @media ${media.secondary} {
+      font-size: 1.55em;
+    }
   }
 
   .card-bottom {
@@ -37,8 +49,13 @@ const Slide = styled.div`
 
 
     svg {
-      width: 2.25em;
       height: 2.25em;
+      width: 2.25em;
+
+      @media ${media.secondary} {
+        height: 1.95em;
+        width: 1.95em;
+      }
     }
   }
 `;
@@ -52,7 +69,7 @@ const Slider = () => (
       >
         <SwiperSlide>
           <Slide>
-            <div className="subtitle">Self serve means Self inspired.</div>
+            <div className="subtitle">Self serve means self inspired.</div>
             <div className="card-bottom">
               <div className="card-title">flavors</div>
               <ChevronRight />
@@ -61,7 +78,7 @@ const Slider = () => (
         </SwiperSlide>
         <SwiperSlide>
           <Slide>
-            <div className="subtitle">We’ve got a lot!</div>
+            <div className="subtitle">We have a lot!</div>
             <div className="card-bottom">
               <div className="card-title">toppings</div>
               <ChevronRight />
