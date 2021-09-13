@@ -1,88 +1,66 @@
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Link from 'next/link';
-import Facebook from '../icons/Facebook';
-import Instagram from '../icons/Instagram';
 import theme from '../../styles/theme';
 
 const { color, fonts, space } = theme;
 
-const MobileMenuStyles = styled.div`
-  width: 300px;
+const MobileMenuStyle = styled.div`
+  width: 100vw;
   background-color: ${color.background};
   height: 100vh;
   transform: ${({ menu }) => (menu ? 'translateX(0)' : 'translateX(300px)')};
   opacity: ${({ menu }) => (menu ? '1' : '0')};
   transition: all 0.9s;
-  padding: 6em 2em 0 2em;
+  padding-right: 2em;
   position: fixed;
   top: 0;
   right: 0;
   bottom: 0;
   z-index: 2;
   overflow-x: hidden;
+  font-family: ${fonts.fontBlack};
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
 
-  .mobile-nav {
+  nav {
     display: inline-block;
     margin-bottom: ${space.halfSpace};
 
     a {
-      color: ${color.foreground};
+      box-sizing: border-box;
       display: block;
-      font-family: ${fonts.fontBold};
-      padding: ${space.halfSpace} 0;
-      font-size: 1.65rem;
-      letter-spacing: 0.12em;
-    }
-  }
-
-  .mobile-menu-contact {
-    margin-bottom: ${space.space};
-
-    h3 {
-      margin-bottom: ${space.space};
-    }
-
-    a {
-      color: ${color.foregroundDim};
-      font-family: ${fonts.fontBold};
-      /* line-height: 140%; */
-      font-size: 1.25em;
-      /* letter-spacing: 0.0/5rem; */
-      display: block;
-      padding: 0 0 ${space.quarterSpace} 0;
-    }
-  }
-
-  .mobile-menu-socials {
-    display: inline-block;
-    position: relative;
-    transform: translateX(-1.3em);
-
-    svg {
+      font-size: 1.875em;
+      line-height: 0;
+      padding: 1em 0 1em 0;
       color: ${color.foregroundAlt};
-      fill: none;
+      text-align: right;
     }
   }
 `;
 
 const MobileMenu = ({ menu }) => (
-  <MobileMenuStyles menu={menu}>
-    <nav className="mobile-nav">
+  <MobileMenuStyle menu={menu}>
+    <nav>
       <Link href="/">
-        <a>Home</a>
+        <a>home</a>
       </Link>
-
+      <Link href="/flavors">
+        <a>flavors</a>
+      </Link>
+      <Link href="/">
+        <a>toppings</a>
+      </Link>
+      <Link href="/">
+        <a>benefits</a>
+      </Link>
+      <Link href="/">
+        <a>about</a>
+      </Link>
     </nav>
-    <div className="mobile-menu-contact">
-      <a href="tel:419-931-0281">419-931-0281</a>
-      <a href="mailto:pocopiattiparty@gmail.com">pocopiattiparty@gmail.com</a>
-    </div>
-    <div className="mobile-menu-socials">
-      <Facebook />
-      <Instagram />
-    </div>
-  </MobileMenuStyles>
+  </MobileMenuStyle>
 );
 
 MobileMenu.propTypes = {

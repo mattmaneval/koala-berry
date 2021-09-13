@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Link from 'next/link';
 import styled from 'styled-components';
 import Logo from './icons/Logo';
 import Menu from './navigation/Menu';
@@ -36,7 +37,9 @@ function Header() {
   return (
     <HeaderStyle menu={menu}>
       <div className="wrap">
-        <Logo />
+        <Link href="/">
+          <a><Logo /></a>
+        </Link>
         <Menu />
         <MenuButton menu={menu} onClick={handleClick} />
       </div>

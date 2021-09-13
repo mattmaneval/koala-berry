@@ -14,8 +14,7 @@ export default function Home() {
       </Head>
       <GlobalStyle />
       <Header />
-      <Hero />
-      <Cards />
+      <div>flavors</div>
     </>
   );
 }
