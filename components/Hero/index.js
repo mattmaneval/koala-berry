@@ -9,7 +9,7 @@ const H1Alt = styled.div`
   display: inline-block;
   font-family: ${fonts.fontBold};
   font-size: 2.5em;
-  line-height: 1.2;
+  line-height: 1.5;
 
   @media ${media.secondary} {
     font-size: 1.25em;

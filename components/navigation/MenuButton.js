@@ -33,7 +33,7 @@ const ButtonStyle = styled.button`
       content: "";
       position: absolute;
       background-color: ${color.foregroundAlt};
-      height: 0.2rem;
+      height: 0.15rem;
       width: 1.65rem;
       border-radius: 5em;
     }
