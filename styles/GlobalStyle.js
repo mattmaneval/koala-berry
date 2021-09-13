@@ -46,7 +46,7 @@ const GlobalStyle = createGlobalStyle`
     width: 100%;
 
     @media ${media.secondary} {
-      padding: 2em 0;
+      padding: 4em 0;
     }
   }
 
@@ -55,8 +55,8 @@ const GlobalStyle = createGlobalStyle`
     display: inline-block;
     font-family: ${fonts.title};
     font-size: 10em;
-    line-height: 0;
-    margin-bottom: 0.1em;
+    line-height: 1.1em;
+    margin-bottom: 0.3em;
     text-transform: uppercase;
 
     @media ${media.primary} {
@@ -64,7 +64,7 @@ const GlobalStyle = createGlobalStyle`
     }
 
     @media ${media.secondary} {
-      font-size: 4em;
+      font-size: 4.2em;
     }
   }
 

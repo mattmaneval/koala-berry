@@ -1,5 +1,10 @@
+import { useState } from 'react';
+import Link from 'next/link';
 import styled from 'styled-components';
 import Logo from './icons/Logo';
+import Menu from './navigation/Menu';
+import MenuButton from './navigation/MenuButton';
+import MobileMenu from './navigation/MobileMenu';
 import media from '../styles/media';
 import theme from '../styles/theme';
 
@@ -7,6 +12,12 @@ const { color } = theme;
 
 const HeaderStyle = styled.header`
   padding: 2em 0;
+
+  .wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
   svg {
     fill: ${color.foregroundAlt};
@@ -19,11 +30,20 @@ const HeaderStyle = styled.header`
 `;
 
 function Header() {
+  const [menu, active] = useState(false);
+
+  const handleClick = () => (menu ? active(false) : active(true));
+
   return (
-    <HeaderStyle>
+    <HeaderStyle menu={menu}>
       <div className="wrap">
-        <Logo />
+        <Link href="/">
+          <a><Logo /></a>
+        </Link>
+        <Menu />
+        <MenuButton menu={menu} onClick={handleClick} />
       </div>
+      <MobileMenu menu={menu} />
     </HeaderStyle>
   );
 }
