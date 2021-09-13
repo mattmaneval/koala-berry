@@ -9,7 +9,7 @@ const MobileMenuStyle = styled.div`
   width: 100vw;
   background-color: ${color.background};
   height: 100vh;
-  transform: ${({ menu }) => (menu ? 'translateX(0)' : 'translateX(300px)')};
+  transform: ${({ menu }) => (menu ? 'translateX(0)' : 'translateX(100vw)')};
   opacity: ${({ menu }) => (menu ? '1' : '0')};
   transition: all 0.9s;
   padding-right: 2em;
