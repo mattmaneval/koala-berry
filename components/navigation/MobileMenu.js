@@ -15,7 +15,7 @@ const MobileMenuStyles = styled.div`
   opacity: ${({ menu }) => (menu ? '1' : '0')};
   transition: all 0.9s;
   padding: 6em 2em 0 2em;
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   bottom: 0;

@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import theme from '../../styles/theme';
-import media from '../../styles/media';
+// import media from '../../styles/media';
 import mixins from '../../styles/mixins';
 
 const { color } = theme;
