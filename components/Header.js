@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import styled from 'styled-components';
 import Logo from './icons/Logo';
+import Menu from './navigation/Menu';
 import MenuButton from './navigation/MenuButton';
 import MobileMenu from './navigation/MobileMenu';
 import media from '../styles/media';
@@ -36,6 +37,7 @@ function Header() {
     <HeaderStyle menu={menu}>
       <div className="wrap">
         <Logo />
+        <Menu />
         <MenuButton menu={menu} onClick={handleClick} />
       </div>
       <MobileMenu menu={menu} />

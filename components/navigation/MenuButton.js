@@ -1,13 +1,13 @@
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import theme from '../../styles/theme';
-// import media from '../../styles/media';
+import media from '../../styles/media';
 import mixins from '../../styles/mixins';
 
 const { color } = theme;
 
 const ButtonStyle = styled.button`
-  display: flex;
+  display: none;
   -webkit-tap-highlight-color: transparent;
   justify-content: flex-start;
   align-items: center;
@@ -20,6 +20,10 @@ const ButtonStyle = styled.button`
   height: 0.8rem;
   width: 2rem;
   transform: translatex(1.8em);
+
+  @media ${media.primary} {
+    display: flex;
+  }
 
   span {
     display: inline-block;
