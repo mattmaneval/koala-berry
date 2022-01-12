@@ -10,13 +10,13 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Koala Berry | Flavors</title>
+        <title>Koala Berry | About</title>
       </Head>
       <GlobalStyle />
       <Header absolute />
       <SubPageHero
-        backgroundImage="/assets/images/flavors.jpeg"
-        heading="Flavors"
+        backgroundImage="/assets/images/neon.jpeg"
+        heading="About"
         subHeading="Self serve mean self inspired."
       />
       <Footer />

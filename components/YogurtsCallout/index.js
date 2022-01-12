@@ -5,7 +5,7 @@ import styled from 'styled-components';
 // const { color, fonts } = theme;
 
 const CalloutStyle = styled.section`
-
+  
 `;
 
 const HeadingGroup = styled.div`

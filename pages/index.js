@@ -4,7 +4,7 @@ import Header from '../components/Header';
 import Hero from '../components/Hero/index';
 import Cards from '../components/Cards/index';
 import YogurtsCallout from '../components/YogurtsCallout/index';
-// import Footer from '../components/Footer';
+import Footer from '../components/Footer';
 
 export default function Home() {
   return (
@@ -13,10 +13,11 @@ export default function Home() {
         <title>Koala Berry</title>
       </Head>
       <GlobalStyle />
-      <Header />
+      <Header dark />
       <Hero />
       <Cards />
       <YogurtsCallout />
+      <Footer />
     </>
   );
 }

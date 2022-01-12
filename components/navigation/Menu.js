@@ -20,7 +20,8 @@ const MenuStyle = styled.nav`
     display: inline-block;
     line-height: 0;
     padding: 1em;
-    color: ${color.foregroundAlt};
+    /* color: ${color.foregroundAlt}; */
+    /* color: ${color.background}; */
     border-bottom: 4.5px solid transparent;
     border-bottom-width: calc(100% - 2em);
 
@@ -33,16 +34,16 @@ const MenuStyle = styled.nav`
 
 const Menu = () => (
   <MenuStyle>
-    <Link href="/">
+    <Link href="/flavors">
       <a>flavors</a>
     </Link>
-    <Link href="/">
+    <Link href="/toppings">
       <a>toppings</a>
     </Link>
-    <Link href="/">
+    <Link href="/benefits">
       <a>benefits</a>
     </Link>
-    <Link href="/">
+    <Link href="/about">
       <a>about</a>
     </Link>
   </MenuStyle>

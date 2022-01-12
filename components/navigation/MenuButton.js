@@ -43,7 +43,7 @@ const ButtonStyle = styled.button`
     }
 
     &:before {
-      top: ${({ menu }) => (menu ? '0' : '-6px')};;
+      top: ${({ menu }) => (menu ? '0' : '-6px')};
       left: 0;
       transform: ${({ menu }) => (menu ? 'rotate(45deg)' : 'rotate(0)')};
       background-color: ${({ menu }) => (menu ? `${color.foregroundAlt}` : `${color.foregroundAlt}`)};

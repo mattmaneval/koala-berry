@@ -35,6 +35,12 @@ const GlobalStyle = createGlobalStyle`
     color: ${color.foreground};
     font-family: ${fonts.fontMedium};
     font-size: ${base.fontBase};
+
+    // background-image: url('/assets/images/banner.png');
+    // background-size: cover;
+    // background-repeat: no-repeat;
+    // background-position: center;
+    // background-attachment: fixed;
   }
 
   section {
@@ -160,17 +166,19 @@ const GlobalStyle = createGlobalStyle`
     ${mixins.wrap}
   }
 
-  .swiper {
-    overflow: visible !important;
-  }
-
-  .swiper-slide {
-    width: 26em !important;
-    // height: 20em !important;
+  .h1-alt {
+    color: ${color.callout};
+    font-family: ${fonts.fontBold};
+    font-size: 2.5em;
+    line-height: 1.5;
 
     @media ${media.secondary} {
-      width: 18em !important;
-      // height: 15em !important;
+      font-size: 1.25em;
+    }
+
+    span {
+      font-family: ${fonts.title};
+      color: ${color.foregroundAlt};
     }
   }
 `;

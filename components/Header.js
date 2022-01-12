@@ -13,6 +13,12 @@ const { color } = theme;
 const HeaderStyle = styled.header`
   padding: 2em 0;
 
+
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  position: ${({ absolute }) => (absolute ? 'absolute' : 'relative')};
+
   .wrap {
     display: flex;
     justify-content: space-between;
@@ -20,22 +26,26 @@ const HeaderStyle = styled.header`
   }
 
   svg {
-    fill: ${color.foregroundAlt};
-    width: 12em;
+    fill: ${({ dark }) => (dark ? color.foregroundAlt : color.background)};
+    width: 6em;
 
     @media ${media.secondary} {
       width: 7em;
     }
   }
+
+  a {
+    color: ${({ dark }) => (dark ? color.foregroundAlt : color.background)};
+  }
 `;
 
-function Header() {
+function Header({ absolute, dark }) {
   const [menu, active] = useState(false);
 
   const handleClick = () => (menu ? active(false) : active(true));
 
   return (
-    <HeaderStyle menu={menu}>
+    <HeaderStyle absolute={absolute} dark={dark} menu={menu}>
       <div className="wrap">
         <Link href="/">
           <a><Logo /></a>
