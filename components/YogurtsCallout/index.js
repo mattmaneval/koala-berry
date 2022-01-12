@@ -1,31 +1,20 @@
 import styled from 'styled-components';
 // import media from '../../styles/media';
-import theme from '../../styles/theme';
+// import theme from '../../styles/theme';
 
-const { color, fonts } = theme;
+// const { color, fonts } = theme;
 
 const CalloutStyle = styled.section`
-  /* background-color: ${color.backgroundAlt}; */
+
 `;
 
 const HeadingGroup = styled.div`
-  h3 {
-    /* color: ${color.callout}; */
+  text-align: center;
+
+  p {
+    display: inline-block;
+    max-width: 30em;
   }
-`;
-
-
-
-const Slide = styled.div`
-  align-items: center;
-  background-color: ${color.foregroundAlt};
-  display: flex;
-  justify-content: center;
-  padding: 2em;
-  height: 15em;
-  color: ${color.background};
-  font-size: 2em;
-  font-family: ${fonts.title};
 `;
 
 function YogurtsCallout() {
@@ -41,8 +30,8 @@ function YogurtsCallout() {
             flavors and lots of beneficial live yogurt cultures called probiotics.
           </p>
         </HeadingGroup>
-    </div>
-  </CalloutStyle>
+      </div>
+    </CalloutStyle>
   );
 };
 

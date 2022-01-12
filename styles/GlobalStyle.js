@@ -87,6 +87,10 @@ const GlobalStyle = createGlobalStyle`
     font-size: 4.25em;
     font-family: ${fonts.title};
     text-transform: uppercase;
+
+    @media ${media.secondary} {
+      font-size: 2em;
+    }
   }
 
   h4 {
@@ -115,7 +119,7 @@ const GlobalStyle = createGlobalStyle`
     text-transform: uppercase;
 
     @media ${media.secondary} {
-      font-size: 2.25em;
+      font-size: 0.85em;
     }
   }
 
@@ -133,6 +137,10 @@ const GlobalStyle = createGlobalStyle`
       &:hover {
         color: ${color.backgroundTert};
       }
+    }
+
+    @media ${media.secondary} {
+      font-size: 1em;
     }
   }
 
