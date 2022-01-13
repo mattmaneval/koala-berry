@@ -9,7 +9,7 @@ const { color, fonts } = theme;
 const CardsStyle = styled.section`
   background-color: ${color.callout};
 
-  .wrap {
+  .inner-wrap {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 2em;
@@ -99,7 +99,7 @@ const Card = styled.div`
 
 const Cards = () => (
   <CardsStyle>
-    <div className="wrap">
+    <div className="inner-wrap">
       <Card>
         <div className="card-top">
           <div className="card-title">flavors</div>

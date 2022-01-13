@@ -13,10 +13,11 @@ export default function Home() {
         <title>Koala Berry</title>
       </Head>
       <GlobalStyle />
-      <Header dark />
+      <Header absolute />
       <Hero />
-      <Cards />
+
       <YogurtsCallout />
+      <Cards />
       <Footer />
     </>
   );

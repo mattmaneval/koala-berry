@@ -166,6 +166,10 @@ const GlobalStyle = createGlobalStyle`
     ${mixins.wrap}
   }
 
+  .inner-wrap {
+    ${mixins.innerWrap}
+  }
+
   .h1-alt {
     color: ${color.callout};
     font-family: ${fonts.fontBold};
