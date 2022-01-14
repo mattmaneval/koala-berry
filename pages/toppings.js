@@ -3,6 +3,9 @@ import { GlobalStyle } from '../styles';
 import Header from '../components/Header';
 import SubPageHero from '../components/SubPageHero/index';
 // import Cards from '../components/Cards/index';
+import FruitsList from '../components/FruitsList';
+import DryToppingsList from '../components/DryToppingsList';
+import SyrupList from '../components/SyrupList';
 
 import Footer from '../components/Footer';
 
@@ -19,6 +22,14 @@ export default function Home() {
         heading="Toppings"
         subHeading="Self serve mean self inspired."
       />
+      <section>
+        <div className="wrap">
+          <p>Koala Berry is proud to offer a mind blowing selection of Frozen Yogurt, Ice Cream, Fresh Fruit and Candy toppings including many old fashioned Ice Cream parlor syrups.  The flavor combinations are endless.</p>
+        </div>
+      </section>
+      <FruitsList />
+      <DryToppingsList />
+      <SyrupList />
       <Footer />
     </>
   );

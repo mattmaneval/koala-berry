@@ -27,7 +27,7 @@ const HeadingGroup = styled.div`
 `;
 
 const CalloutImage = styled.div`
-  background-image: url('/assets/images/group.png');
+  background-image: url('/assets/images/waffle-bowl.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;

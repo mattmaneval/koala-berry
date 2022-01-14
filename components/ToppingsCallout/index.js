@@ -33,7 +33,7 @@ const HeadingGroup = styled.div`
 `;
 
 const ToppingsCalloutImage = styled.div`
-  background-image: url('/assets/images/group.png');
+  background-image: url('/assets/images/chocolate-bowl.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -53,8 +53,8 @@ function YogurtsToppingsCallout() {
           <p>Super fresh fruit, premium fountain syrups and oodles of healthy and sweet toppings make Koala Berry a special treat for all.</p>
           <p>Mix and match over 50 toppings and 18 frozen yogurt or ice cream flavors.  You have almost limitless combinations to enjoy.</p>
           <ButtonCta
-            ctaText="View Our Flavors"
-            ctaHref="/flavors"
+            ctaText="View Our Toppings"
+            ctaHref="/toppings"
           />
         </HeadingGroup>
       </div>

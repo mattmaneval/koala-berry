@@ -35,12 +35,6 @@ const GlobalStyle = createGlobalStyle`
     color: ${color.foreground};
     font-family: ${fonts.fontMedium};
     font-size: ${base.fontBase};
-
-    // background-image: url('/assets/images/banner.png');
-    // background-size: cover;
-    // background-repeat: no-repeat;
-    // background-position: center;
-    // background-attachment: fixed;
   }
 
   section {
@@ -66,11 +60,11 @@ const GlobalStyle = createGlobalStyle`
     text-transform: uppercase;
 
     @media ${media.primary} {
-      font-size: 7em;
+      font-size: 4.5em;
     }
 
     @media ${media.secondary} {
-      font-size: 4.2em;
+      font-size: 3.5em;
     }
   }
 

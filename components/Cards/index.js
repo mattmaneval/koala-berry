@@ -8,6 +8,10 @@ const { color, fonts } = theme;
 
 const CardsStyle = styled.section`
   background-color: ${color.callout};
+  background-image: url('/assets/images/koala-bear.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 
   .inner-wrap {
     display: grid;

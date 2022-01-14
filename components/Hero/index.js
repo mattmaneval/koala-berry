@@ -17,7 +17,7 @@ const HeroStyle = styled.section`
   justify-content: flex-end;
 
   @media ${media.secondary} {
-    height: 80vh;
+    height: 60vh;
   }
 
   .inner-wrap {
@@ -35,7 +35,8 @@ const HeroImage = styled.div`
   background-repeat: no-repeat;
   background-position: center;
   height: 0;
-  padding-top: 55%;
+  margin-bottom: -7em;
+  padding-top: 65%;
   width: 100%;
 `;
 

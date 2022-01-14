@@ -1,17 +1,15 @@
 import styled from 'styled-components';
-// import PropTypes from 'prop-types';
-import Phone from '../icons/Phone';
 import media from '../../styles/media';
 import theme from '../../styles/theme';
 
 const { color, space, fonts } = theme;
 
-const GlobalHeaderStyle = styled.a`
+const GlobalHeaderStyle = styled.div`
   background-color: ${color.callout};
   display: flex;
   align-items: center;
   justify-content: center;
-  color: ${color.callout};
+  color: ${color.background};
   font-family: ${fonts.fontBold};
   padding: 0.5em;
   line-height: 0;
