@@ -60,7 +60,7 @@ const GlobalStyle = createGlobalStyle`
     color: ${color.foregroundAlt};
     display: inline-block;
     font-family: ${fonts.title};
-    font-size: 10em;
+    font-size: 5em;
     line-height: 1.1em;
     margin-bottom: 0.3em;
     text-transform: uppercase;
@@ -119,10 +119,10 @@ const GlobalStyle = createGlobalStyle`
     display: block;
     color: ${color.foreground};
     font-family: ${fonts.fontBold};
-    font-size: 1.15em;
+    font-size: min(1em,.75rem);
     letter-spacing: 0.15em;
     margin-bottom: ${space.space};
-    text-transform: uppercase;
+    // text-transform: uppercase;
 
     @media ${media.secondary} {
       font-size: 0.85em;
@@ -130,9 +130,11 @@ const GlobalStyle = createGlobalStyle`
   }
 
   p {
-    color: ${color.foreground};
-    line-height: 110%;
-    font-size: 1.25em;
+    color: ${color.callout};
+    line-height: 1.5;
+    font-family: ${fonts.fontBold};
+    font-size: 1.65em;
+    margin-bottom: 1em;
 
     a {
       ${mixins.animate};

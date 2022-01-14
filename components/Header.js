@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import styled from 'styled-components';
+import GlobalHeader from './GlobalHeader';
 import Logo from './icons/Logo';
 import Menu from './navigation/Menu';
 import MenuButton from './navigation/MenuButton';
@@ -11,9 +12,7 @@ import theme from '../styles/theme';
 const { color } = theme;
 
 const HeaderStyle = styled.header`
-  padding: 2em 0;
-
-
+  padding: 0 0 2em 0;
   position: absolute;
   width: 100%;
   z-index: 1;
@@ -30,7 +29,7 @@ const HeaderStyle = styled.header`
     width: 6em;
 
     @media ${media.secondary} {
-      width: 7em;
+      width: 4.5em;
     }
   }
 
@@ -46,6 +45,7 @@ function Header({ absolute, dark }) {
 
   return (
     <HeaderStyle absolute={absolute} dark={dark} menu={menu}>
+      <GlobalHeader />
       <div className="wrap">
         <Link href="/">
           <a><Logo /></a>

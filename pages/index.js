@@ -4,6 +4,7 @@ import Header from '../components/Header';
 import Hero from '../components/Hero/index';
 import Cards from '../components/Cards/index';
 import YogurtsCallout from '../components/YogurtsCallout/index';
+import ToppingsCallout from '../components/ToppingsCallout/index';
 import Footer from '../components/Footer';
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
       <Hero />
 
       <YogurtsCallout />
+      <ToppingsCallout />
       <Cards />
       <Footer />
     </>

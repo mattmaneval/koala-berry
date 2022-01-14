@@ -1,10 +1,12 @@
 import styled from 'styled-components';
 import media from '../../styles/media';
-// import theme from '../../styles/theme';
+import theme from '../../styles/theme';
 import ButtonCta from '../navigation/ButtonCta';
-// const { color, fonts } = theme;
+const { color, fonts } = theme;
 
-const CalloutStyle = styled.section`
+const ToppingsCalloutStyle = styled.section`
+  background-color: ${color.foregroundAlt};
+
   .wrap {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -16,6 +18,10 @@ const CalloutStyle = styled.section`
 `;
 
 const HeadingGroup = styled.div`
+
+  h3, p {
+    color: ${color.background};
+  }
   p {
     display: inline-block;
     max-width: 30em;
@@ -26,7 +32,7 @@ const HeadingGroup = styled.div`
   }
 `;
 
-const CalloutImage = styled.div`
+const ToppingsCalloutImage = styled.div`
   background-image: url('/assets/images/group.png');
   background-size: contain;
   background-repeat: no-repeat;
@@ -37,26 +43,23 @@ const CalloutImage = styled.div`
   }
 `;
 
-function YogurtsCallout() {
+function YogurtsToppingsCallout() {
   return (
-    <CalloutStyle>
+    <ToppingsCalloutStyle>
       <div className="wrap">
+      <ToppingsCalloutImage />
         <HeadingGroup>
-          <h3>Your very own unique, self-inspired dessert.</h3>
-          <p>
-            The benefits of yogurt have been talked about for years.
-            Ours starts with real dairy, fresh milk, real fruit purees, natural
-            flavors and lots of beneficial live yogurt cultures called probiotics.
-          </p>
+          <h3>Endless Toppings</h3>
+          <p>Super fresh fruit, premium fountain syrups and oodles of healthy and sweet toppings make Koala Berry a special treat for all.</p>
+          <p>Mix and match over 50 toppings and 18 frozen yogurt or ice cream flavors.  You have almost limitless combinations to enjoy.</p>
           <ButtonCta
             ctaText="View Our Flavors"
             ctaHref="/flavors"
           />
         </HeadingGroup>
-        <CalloutImage />
       </div>
-    </CalloutStyle>
+    </ToppingsCalloutStyle>
   );
 };
 
-export default YogurtsCallout;
+export default YogurtsToppingsCallout;
