@@ -54,17 +54,17 @@ const GlobalStyle = createGlobalStyle`
     color: ${color.foregroundAlt};
     display: inline-block;
     font-family: ${fonts.title};
-    font-size: 10em;
+    font-size: 5em;
     line-height: 1.1em;
     margin-bottom: 0.3em;
     text-transform: uppercase;
 
     @media ${media.primary} {
-      font-size: 7em;
+      font-size: 4.5em;
     }
 
     @media ${media.secondary} {
-      font-size: 4.2em;
+      font-size: 3.5em;
     }
   }
 
@@ -87,6 +87,10 @@ const GlobalStyle = createGlobalStyle`
     font-size: 4.25em;
     font-family: ${fonts.title};
     text-transform: uppercase;
+
+    @media ${media.secondary} {
+      font-size: 2em;
+    }
   }
 
   h4 {
@@ -109,20 +113,22 @@ const GlobalStyle = createGlobalStyle`
     display: block;
     color: ${color.foreground};
     font-family: ${fonts.fontBold};
-    font-size: 1.15em;
+    font-size: min(1em,.75rem);
     letter-spacing: 0.15em;
     margin-bottom: ${space.space};
-    text-transform: uppercase;
+    // text-transform: uppercase;
 
     @media ${media.secondary} {
-      font-size: 2.25em;
+      font-size: 0.85em;
     }
   }
 
   p {
-    color: ${color.foreground};
-    line-height: 110%;
-    font-size: 1.25em;
+    color: ${color.callout};
+    line-height: 1.5;
+    font-family: ${fonts.fontBold};
+    font-size: 1.65em;
+    margin-bottom: 1em;
 
     a {
       ${mixins.animate};
@@ -133,6 +139,10 @@ const GlobalStyle = createGlobalStyle`
       &:hover {
         color: ${color.backgroundTert};
       }
+    }
+
+    @media ${media.secondary} {
+      font-size: 1em;
     }
   }
 
@@ -152,17 +162,23 @@ const GlobalStyle = createGlobalStyle`
     ${mixins.wrap}
   }
 
-  .swiper {
-    overflow: visible !important;
+  .inner-wrap {
+    ${mixins.innerWrap}
   }
 
-  .swiper-slide {
-    width: 26em !important;
-    // height: 20em !important;
+  .h1-alt {
+    color: ${color.callout};
+    font-family: ${fonts.fontBold};
+    font-size: 2.5em;
+    line-height: 1.5;
 
     @media ${media.secondary} {
-      width: 18em !important;
-      // height: 15em !important;
+      font-size: 1.25em;
+    }
+
+    span {
+      font-family: ${fonts.title};
+      color: ${color.foregroundAlt};
     }
   }
 `;

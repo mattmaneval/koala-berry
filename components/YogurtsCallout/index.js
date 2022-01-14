@@ -1,31 +1,40 @@
 import styled from 'styled-components';
-// import media from '../../styles/media';
-import theme from '../../styles/theme';
-
-const { color, fonts } = theme;
+import media from '../../styles/media';
+// import theme from '../../styles/theme';
+import ButtonCta from '../navigation/ButtonCta';
+// const { color, fonts } = theme;
 
 const CalloutStyle = styled.section`
-  /* background-color: ${color.backgroundAlt}; */
-`;
+  .wrap {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 
-const HeadingGroup = styled.div`
-  h3 {
-    /* color: ${color.callout}; */
+    @media ${media.secondary} {
+      display: block;
+    }
   }
 `;
 
+const HeadingGroup = styled.div`
+  p {
+    display: inline-block;
+    max-width: 30em;
+  }
 
+  @media ${media.secondary} {
+    margin-bottom: 2em;
+  }
+`;
 
-const Slide = styled.div`
-  align-items: center;
-  background-color: ${color.foregroundAlt};
-  display: flex;
-  justify-content: center;
-  padding: 2em;
-  height: 15em;
-  color: ${color.background};
-  font-size: 2em;
-  font-family: ${fonts.title};
+const CalloutImage = styled.div`
+  background-image: url('/assets/images/waffle-bowl.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media ${media.secondary} {
+    height: 20em;
+  }
 `;
 
 function YogurtsCallout() {
@@ -33,16 +42,20 @@ function YogurtsCallout() {
     <CalloutStyle>
       <div className="wrap">
         <HeadingGroup>
-          <h5>Our Yogurt</h5>
           <h3>Your very own unique, self-inspired dessert.</h3>
           <p>
             The benefits of yogurt have been talked about for years.
             Ours starts with real dairy, fresh milk, real fruit purees, natural
             flavors and lots of beneficial live yogurt cultures called probiotics.
           </p>
+          <ButtonCta
+            ctaText="View Our Flavors"
+            ctaHref="/flavors"
+          />
         </HeadingGroup>
-    </div>
-  </CalloutStyle>
+        <CalloutImage />
+      </div>
+    </CalloutStyle>
   );
 };
 
