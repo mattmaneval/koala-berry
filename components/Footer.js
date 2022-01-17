@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Logo from './icons/Logo';
-import CallCta from './navigation/CallCta';
+import ButtonCta from './navigation/ButtonCta';
 import media from '../styles/media';
 import theme from '../styles/theme';
 
@@ -23,7 +23,8 @@ const FooterStyles = styled.footer`
     &-hours,
     &-address,
     &-contact {
-      font-family: ${fonts.fontAlt};
+      color: ${color.foregroundAlt};
+      font-family: ${fonts.fontBold};
       span {
         line-height: 1.5em;
       }
@@ -31,10 +32,10 @@ const FooterStyles = styled.footer`
 
     &-hours,
     &-address  {
-      margin: 0 3em 0 0;
+      margin-bottom: 1.65em;
 
       @media ${media.secondary} {
-        margin: 0 3em 2em 0;
+        /* margin: 0 3em 2em 0; */
       }
     }
 
@@ -43,8 +44,8 @@ const FooterStyles = styled.footer`
     }
 
     &-hours-row {
-      display: flex;
-      justify-content: space-between;
+      /* display: flex;
+      justify-content: space-between; */
     }
 
     &-address {
@@ -54,7 +55,7 @@ const FooterStyles = styled.footer`
     }
 
     &-contact {
-      display: flex;
+      /* display: flex; */
       font-size: 1.25em;
       margin-bottom: 4em;
 
@@ -107,7 +108,11 @@ const Footer = () => (
           <span>6710 Central Ave</span>
           <span>Toledo, OH</span>
         </div>
-        <CallCta ctaText="419-237-3737" />
+        <ButtonCta
+          alt
+          ctaText="419-237-3737"
+          href="tel:419-237-3737"
+        />
       </div>
       <div className="footer-bottom">
         <div className="copyright">
