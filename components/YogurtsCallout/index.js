@@ -51,6 +51,7 @@ function YogurtsCallout() {
           <ButtonCta
             ctaText="View Our Flavors"
             ctaHref="/flavors"
+            alt
           />
         </HeadingGroup>
         <CalloutImage />

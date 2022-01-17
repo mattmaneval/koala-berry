@@ -54,7 +54,7 @@ const GlobalStyle = createGlobalStyle`
     color: ${color.foregroundAlt};
     display: inline-block;
     font-family: ${fonts.title};
-    font-size: 5em;
+    font-size: min(13vw,5em);
     line-height: 1.1em;
     margin-bottom: 0.3em;
     text-transform: uppercase;
@@ -82,7 +82,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   h3 {
-    color: ${color.foregroundAlt};
+    color: ${color.foregroundTert};
     margin-bottom: ${space.halfSpace};
     font-size: 4.25em;
     font-family: ${fonts.title};
@@ -127,7 +127,7 @@ const GlobalStyle = createGlobalStyle`
     color: ${color.callout};
     line-height: 1.5;
     font-family: ${fonts.fontBold};
-    font-size: 1.65em;
+    font-size: 1.45em;
     margin-bottom: 1em;
 
     a {

@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import ButtonCta from '../navigation/ButtonCta';
 import media from '../../styles/media';
 import theme from '../../styles/theme';
 
@@ -27,6 +28,10 @@ const HeroStyle = styled.section`
    h1 {
      color: ${color.background};
    }
+
+   a {
+     display: inline-block;
+   }
 `;
 
 const HeroImage = styled.div`
@@ -44,16 +49,17 @@ const H1Alt = styled.div`
   color: ${color.callout};
   display: inline-block;
   font-family: ${fonts.fontBold};
-  font-size: 1.65em;
+  font-size: 1.45em;
   line-height: 1.5;
-  max-width: 20em;
+  margin-bottom: 1em;
+  /* max-width: 20em; */
 
   @media ${media.secondary} {
     font-size: 1.25em;
   }
 
   span {
-    font-family: ${fonts.title};
+    /* font-family: ${fonts.title}; */
     color: ${color.background};
   }
 `;
@@ -67,8 +73,12 @@ const Hero = () => (
         {' '}
         Grab a cup, pick a flavor, add toppings, weigh it, checkout, and
         {' '}
-        <span>ENJOY!</span>
+        <span>enjoy!</span>
       </H1Alt>
+      <ButtonCta
+        ctaText="View Our Yogurts"
+        ctaHref="/flavors"
+      />
     </div>
   </HeroStyle>
 );
