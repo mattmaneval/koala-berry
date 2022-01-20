@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import media from '../../styles/media';
 // import theme from '../../styles/theme';
-import ButtonCta from '../navigation/ButtonCta';
+// import ButtonCta from '../navigation/ButtonCta';
 // const { color, fonts } = theme;
 
 const CalloutStyle = styled.section`
@@ -48,11 +48,6 @@ function YogurtsCallout() {
             Ours starts with real dairy, fresh milk, real fruit purees, natural
             flavors and lots of beneficial live yogurt cultures called probiotics.
           </p>
-          <ButtonCta
-            ctaText="View Our Flavors"
-            ctaHref="/flavors"
-            alt
-          />
         </HeadingGroup>
         <CalloutImage />
       </div>

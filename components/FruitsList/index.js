@@ -2,9 +2,12 @@ import MenuItem from '../MenuItem';
 import { fruitsData } from '../../data/fruits-local';
 
 const FruitsList = () => (
-  <section>
+  <section className="align-center">
     <div className="wrap">
       <h3>Fresh Fruit</h3>
+    </div>
+    <div className="wrap list">
+
       {Object.keys(fruitsData).map((key) => (
         <MenuItem data={fruitsData[key]} />
       ))}

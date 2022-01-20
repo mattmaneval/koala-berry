@@ -9,7 +9,7 @@ import SyrupList from '../components/SyrupList';
 
 import Footer from '../components/Footer';
 
-export default function Home() {
+export default function Toppings() {
   return (
     <>
       <Head>
@@ -23,7 +23,7 @@ export default function Home() {
         subHeading="Self serve mean self inspired."
       />
       <section>
-        <div className="wrap">
+        <div className="mini-wrap">
           <p>Koala Berry is proud to offer a mind blowing selection of Frozen Yogurt, Ice Cream, Fresh Fruit and Candy toppings including many old fashioned Ice Cream parlor syrups.  The flavor combinations are endless.</p>
         </div>
       </section>

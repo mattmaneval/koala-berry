@@ -6,7 +6,7 @@ import SubPageHero from '../components/SubPageHero/index';
 
 import Footer from '../components/Footer';
 
-export default function Home() {
+export default function Benefits() {
   return (
     <>
       <Head>
@@ -20,7 +20,7 @@ export default function Home() {
         subHeading="Self serve mean self inspired."
       />
       <section>
-        <div className="wrap">
+        <div className="inner-wrap">
           <p>The benefits of yogurt have been talked about for years. Ours starts with dairy fresh milk, real fruit purees, natural flavors and lots of beneficial live yogurt cultures called probiotics.  That’s what premuim Koala Berry yogurts are all about. Our yogurt is specially blended to ensure a smooth and creamy spoonful that brings delight in ever bite.  Continued care is taken at the store to be certain our products are as creamy and delicious as the day we opened for business way back in 2011.</p>
           <h3>Delicious taste… healthy lifestyle</h3>
           <p>Low fat, nonfat, sweetened or no sugar added, whatever your preference, Koala Berry yogurts are a delicious treat and a great source of calcium and protein.  It is low in cholesterol and sodium too.  Koala Berry promotes healthy immune and digestive systems.</p>

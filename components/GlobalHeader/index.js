@@ -1,8 +1,7 @@
 import styled from 'styled-components';
-import media from '../../styles/media';
 import theme from '../../styles/theme';
 
-const { color, space, fonts } = theme;
+const { color, fonts } = theme;
 
 const GlobalHeaderStyle = styled.div`
   background-color: ${color.callout};
@@ -11,31 +10,14 @@ const GlobalHeaderStyle = styled.div`
   justify-content: center;
   color: ${color.background};
   font-family: ${fonts.fontBold};
-  padding: 0.5em;
+  padding: 1em;
   line-height: 0;
   margin-bottom: 1em;
-
-
-  @media ${media.secondary} {
-    font-size: 1.25em;
-  }
-
-  @media ${media.smallPhone} {
-    font-size: 1em;
-  }
-
-  svg {
-    width: 1.15em;
-    height: 1.15em;
-    fill: ${color.foregroundTert};
-    margin-right: ${space.quarterSpace};
-  }
+  font-size: 0.85em;
 `;
 
 const GlobalHeader = () => (
-  <GlobalHeaderStyle>
-    <div>Open everyday noon to 10 pm</div>
-  </GlobalHeaderStyle>
+  <GlobalHeaderStyle>Open everyday noon to 10 pm</GlobalHeaderStyle>
 );
 
 export default GlobalHeader;

@@ -2,9 +2,11 @@ import MenuItem from '../MenuItem';
 import { syrupData } from '../../data/syrup-local';
 
 const SyrupList = () => (
-  <section>
+  <section className="align-center">
     <div className="wrap">
       <h3>Syrup</h3>
+    </div>
+    <div className="wrap list">
       {Object.keys(syrupData).map((key) => (
         <MenuItem data={syrupData[key]} />
       ))}

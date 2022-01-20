@@ -83,8 +83,8 @@ const GlobalStyle = createGlobalStyle`
 
   h3 {
     color: ${color.foregroundTert};
-    margin-bottom: ${space.halfSpace};
-    font-size: 4.25em;
+    margin-bottom: 1em;
+    font-size: 3.25em;
     font-family: ${fonts.title};
     text-transform: uppercase;
 
@@ -130,6 +130,10 @@ const GlobalStyle = createGlobalStyle`
     font-size: 1.45em;
     margin-bottom: 1em;
 
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+
     a {
       ${mixins.animate};
       color: ${color.foreground};
@@ -166,6 +170,20 @@ const GlobalStyle = createGlobalStyle`
     ${mixins.innerWrap}
   }
 
+  .mini-wrap {
+    ${mixins.miniWrap}
+  }
+
+  .no {
+    &-padding-top {
+      padding-top: 0;
+    }
+  }
+
+  .align-center {
+    text-align: center;
+  }
+
   .h1-alt {
     color: ${color.callout};
     font-family: ${fonts.fontBold};
@@ -179,6 +197,18 @@ const GlobalStyle = createGlobalStyle`
     span {
       font-family: ${fonts.title};
       color: ${color.foregroundAlt};
+    }
+  }
+
+  .list {
+    column-count: 3;
+
+    @media ${media.primary} {
+      column-count: 2;
+    }
+
+    @media ${media.secondary} {
+      column-count: 1;
     }
   }
 `;

@@ -16,7 +16,7 @@ const HeaderStyle = styled.header`
   position: absolute;
   width: 100%;
   z-index: 1;
-  position: ${({ absolute }) => (absolute ? 'absolute' : 'relative')};
+  position: absolute;
 
   .wrap {
     display: flex;
@@ -38,13 +38,13 @@ const HeaderStyle = styled.header`
   }
 `;
 
-function Header({ absolute, dark }) {
+function Header({ dark }) {
   const [menu, active] = useState(false);
 
   const handleClick = () => (menu ? active(false) : active(true));
 
   return (
-    <HeaderStyle absolute={absolute} dark={dark} menu={menu}>
+    <HeaderStyle dark={dark} menu={menu}>
       <GlobalHeader />
       <div className="wrap">
         <Link href="/">

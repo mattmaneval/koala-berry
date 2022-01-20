@@ -1,15 +1,11 @@
 import styled from 'styled-components';
-import ButtonCta from '../navigation/ButtonCta';
+// import ButtonCta from '../navigation/ButtonCta';
 import media from '../../styles/media';
 import theme from '../../styles/theme';
 
 const { color, fonts } = theme;
 
 const HeroStyle = styled.section`
-  /* background-image: url('/assets/images/banner.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center; */
   align-items: center;
   background-color: ${color.foregroundAlt};
   height: 100vh;
@@ -59,7 +55,6 @@ const H1Alt = styled.div`
   }
 
   span {
-    /* font-family: ${fonts.title}; */
     color: ${color.background};
   }
 `;
@@ -70,15 +65,10 @@ const Hero = () => (
       <HeroImage />
       <h1>Frozen Yogurt</h1>
       <H1Alt>
-        {' '}
         Grab a cup, pick a flavor, add toppings, weigh it, checkout, and
         {' '}
         <span>enjoy!</span>
       </H1Alt>
-      <ButtonCta
-        ctaText="View Our Yogurts"
-        ctaHref="/flavors"
-      />
     </div>
   </HeroStyle>
 );
