@@ -54,7 +54,7 @@ const GlobalStyle = createGlobalStyle`
     color: ${color.foregroundAlt};
     display: inline-block;
     font-family: ${fonts.title};
-    font-size: min(13vw,5em);
+    font-size: min(13vw,7em);
     line-height: 1.1em;
     margin-bottom: 0.3em;
     text-transform: uppercase;
@@ -84,12 +84,12 @@ const GlobalStyle = createGlobalStyle`
   h3 {
     color: ${color.foregroundTert};
     margin-bottom: 1em;
-    font-size: 3.25em;
+    font-size: 5.25em;
     font-family: ${fonts.title};
     text-transform: uppercase;
 
     @media ${media.secondary} {
-      font-size: 2em;
+      font-size: 2.3em;
     }
   }
 
@@ -210,6 +210,21 @@ const GlobalStyle = createGlobalStyle`
     @media ${media.secondary} {
       column-count: 1;
     }
+  }
+
+  .logo-background {
+    background-image: url('/assets/images/koala-bear.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    backdrop-filter: ;
+  }
+
+  .sparkle-background {
+    background-image: url('/assets/images/sparkles-white.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 `;
 

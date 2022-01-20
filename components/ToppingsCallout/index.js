@@ -5,7 +5,10 @@ import theme from '../../styles/theme';
 const { color, fonts } = theme;
 
 const ToppingsCalloutStyle = styled.section`
-  background-color: ${color.foregroundAlt};
+  background-image: url('/assets/images/sparkles-white.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 
   .wrap {
     display: grid;
@@ -20,7 +23,7 @@ const ToppingsCalloutStyle = styled.section`
 const HeadingGroup = styled.div`
 
   h3, p {
-    color: ${color.background};
+    /* color: ${color.background}; */
   }
   p {
     display: inline-block;
@@ -29,6 +32,7 @@ const HeadingGroup = styled.div`
 
   @media ${media.secondary} {
     margin-bottom: 2em;
+    text-align: center;
   }
 `;
 
@@ -39,20 +43,21 @@ const ToppingsCalloutImage = styled.div`
   background-position: center;
 
   @media ${media.secondary} {
-    height: 20em;
+    height: 16em;
+    margin-bottom: 4em;
   }
 `;
 
 function YogurtsToppingsCallout() {
   return (
-    <ToppingsCalloutStyle>
+    <ToppingsCalloutStyle className="no-padding-top">
       <div className="wrap">
       <ToppingsCalloutImage />
         <HeadingGroup>
           <h3>Endless Toppings</h3>
           <p>Super fresh fruit, premium fountain syrups and oodles of healthy and sweet toppings make Koala Berry a special treat for all.</p>
           <p>Mix and match over 50 toppings and 18 frozen yogurt or ice cream flavors.  You have almost limitless combinations to enjoy.</p>
-        
+
         </HeadingGroup>
       </div>
     </ToppingsCalloutStyle>

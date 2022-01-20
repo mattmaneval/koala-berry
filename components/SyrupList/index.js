@@ -2,7 +2,7 @@ import MenuItem from '../MenuItem';
 import { syrupData } from '../../data/syrup-local';
 
 const SyrupList = () => (
-  <section className="align-center">
+  <section className="align-center sparkle-background">
     <div className="wrap">
       <h3>Syrup</h3>
     </div>

@@ -16,8 +16,10 @@ export default function Home() {
       <GlobalStyle />
       <Header />
       <Hero />
+      <div className="logo-background">
       <YogurtsCallout />
       <ToppingsCallout />
+      </div>
       <Cards />
       <Footer />
     </>

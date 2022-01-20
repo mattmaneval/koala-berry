@@ -19,7 +19,7 @@ export default function Benefits() {
         heading="Benefits"
         subHeading="Self serve mean self inspired."
       />
-      <section>
+      <section className="sparkle-background">
         <div className="inner-wrap">
           <p>The benefits of yogurt have been talked about for years. Ours starts with dairy fresh milk, real fruit purees, natural flavors and lots of beneficial live yogurt cultures called probiotics.  That’s what premuim Koala Berry yogurts are all about. Our yogurt is specially blended to ensure a smooth and creamy spoonful that brings delight in ever bite.  Continued care is taken at the store to be certain our products are as creamy and delicious as the day we opened for business way back in 2011.</p>
           <h3>Delicious taste… healthy lifestyle</h3>

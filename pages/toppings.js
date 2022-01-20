@@ -22,14 +22,15 @@ export default function Toppings() {
         heading="Toppings"
         subHeading="Self serve mean self inspired."
       />
-      <section>
+      <section className="sparkle-background">
         <div className="mini-wrap">
           <p>Koala Berry is proud to offer a mind blowing selection of Frozen Yogurt, Ice Cream, Fresh Fruit and Candy toppings including many old fashioned Ice Cream parlor syrups.  The flavor combinations are endless.</p>
         </div>
       </section>
-      <FruitsList />
-      <DryToppingsList />
-      <SyrupList />
+
+        <FruitsList />
+        <DryToppingsList />
+        <SyrupList />
       <Footer />
     </>
   );

@@ -5,20 +5,45 @@ import media from '../../styles/media';
 // const { color, fonts } = theme;
 
 const CalloutStyle = styled.section`
+  background-image: url('/assets/images/sparkles-white.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
   .wrap {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1.5em;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 4em;
 
     @media ${media.secondary} {
       display: block;
     }
   }
+
+  p {
+    display: inline-block;
+    max-width: 22em;
+
+    @media ${media.secondary} {
+      text-align: center;
+      max-width: 100%;
+    }
+  }
+
 `;
 
 const HeadingGroup = styled.div`
-  p {
-    display: inline-block;
-    max-width: 30em;
+  h3 {
+    margin-bottom: 0;
+    text-align: right;
+
+    @media ${media.secondary} {
+      text-align: center;
+      margin-bottom: 2em;
+    }
   }
 
   @media ${media.secondary} {
@@ -31,9 +56,10 @@ const CalloutImage = styled.div`
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  height: 100%;
 
   @media ${media.secondary} {
-    height: 20em;
+    height: 16em;
   }
 `;
 
@@ -42,14 +68,16 @@ function YogurtsCallout() {
     <CalloutStyle>
       <div className="wrap">
         <HeadingGroup>
-          <h3>Your very own unique, self-inspired dessert.</h3>
-          <p>
-            The benefits of yogurt have been talked about for years.
-            Ours starts with real dairy, fresh milk, real fruit purees, natural
-            flavors and lots of beneficial live yogurt cultures called probiotics.
-          </p>
+          <h3>Your very own unique,<br />self-inspired dessert.</h3>
         </HeadingGroup>
         <CalloutImage />
+      </div>
+      <div class="mini-wrap">
+        <p>
+          The benefits of yogurt have been talked about for years.
+          Ours starts with real dairy, fresh milk, real fruit purees, natural
+          flavors and lots of beneficial live yogurt cultures called probiotics.
+        </p>
       </div>
     </CalloutStyle>
   );

@@ -12,6 +12,11 @@ const CardsStyle = styled.section`
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center; */
+  
+  background-image: url('/assets/images/sparkles-white.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 
   .inner-wrap {
     display: grid;
@@ -42,14 +47,16 @@ const Card = styled.div`
       font-family: ${fonts.title};
       color: ${color.foregroundAlt};
       display: inline-block;
-      font-size: 4em;
+      /* font-size: 4em; */
+      font-size: 2em;
       position: relative;
       text-transform: uppercase;
       margin-bottom: 0.25em;
       z-index: 1;
 
       @media ${media.secondary} {
-        font-size: 2.6em;
+        /* font-size: 2.6em; */
+        font-size: 1.65em;
       }
     }
 
@@ -62,7 +69,7 @@ const Card = styled.div`
       width: 100%;
 
       span {
-        font-size: 1.25em;
+        font-size: 1em;
       }
 
       svg {
