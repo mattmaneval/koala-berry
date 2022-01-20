@@ -5,6 +5,10 @@ import theme from '../../styles/theme';
 const { fonts, space, color } = theme;
 
 const MenuItemStyle = styled.div`
+  color: ${color.foregroundAlt};
+  line-height: 1.5;
+  font-family: ${fonts.fontBold};
+  font-size: 1.45em;
   margin-bottom: 1em;
 `;
 

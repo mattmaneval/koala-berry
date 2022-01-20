@@ -14,9 +14,8 @@ export default function Home() {
         <title>Koala Berry</title>
       </Head>
       <GlobalStyle />
-      <Header absolute />
+      <Header />
       <Hero />
-
       <YogurtsCallout />
       <ToppingsCallout />
       <Cards />

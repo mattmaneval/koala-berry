@@ -2,9 +2,11 @@ import MenuItem from '../MenuItem';
 import { dryToppingsData } from '../../data/dry-toppings-local';
 
 const DryToppingsList = () => (
-  <section>
+  <section className="align-center">
     <div className="wrap">
       <h3>Dry Toppings</h3>
+    </div>
+    <div className="wrap list">
       {Object.keys(dryToppingsData).map((key) => (
         <MenuItem data={dryToppingsData[key]} />
       ))}

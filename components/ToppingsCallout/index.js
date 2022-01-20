@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import media from '../../styles/media';
 import theme from '../../styles/theme';
-import ButtonCta from '../navigation/ButtonCta';
+// import ButtonCta from '../navigation/ButtonCta';
 const { color, fonts } = theme;
 
 const ToppingsCalloutStyle = styled.section`
@@ -52,10 +52,7 @@ function YogurtsToppingsCallout() {
           <h3>Endless Toppings</h3>
           <p>Super fresh fruit, premium fountain syrups and oodles of healthy and sweet toppings make Koala Berry a special treat for all.</p>
           <p>Mix and match over 50 toppings and 18 frozen yogurt or ice cream flavors.  You have almost limitless combinations to enjoy.</p>
-          <ButtonCta
-            ctaText="View Our Toppings"
-            ctaHref="/toppings"
-          />
+        
         </HeadingGroup>
       </div>
     </ToppingsCalloutStyle>

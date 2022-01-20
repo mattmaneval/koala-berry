@@ -34,6 +34,20 @@ const mixins = {
     }
   `,
 
+  // Inner Wrap
+  miniWrap: css`
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 52rem;
+    width: ${responsive.wrap};
+
+    @media ${media.secondary} {
+      width: ${responsive.wrapMobile};
+    }
+  `,
+
   // Flex
   flexCenter: css`
     display: flex;

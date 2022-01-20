@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Logo from './icons/Logo';
-import ButtonCta from './navigation/ButtonCta';
+// import ButtonCta from './navigation/ButtonCta';
 import media from '../styles/media';
 import theme from '../styles/theme';
 
@@ -108,11 +108,7 @@ const Footer = () => (
           <span>6710 Central Ave</span>
           <span>Toledo, OH</span>
         </div>
-        <ButtonCta
-          alt
-          ctaText="419-237-3737"
-          href="tel:419-237-3737"
-        />
+
       </div>
       <div className="footer-bottom">
         <div className="copyright">

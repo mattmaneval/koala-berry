@@ -24,6 +24,10 @@ const SubPageHeroStyle = styled.section`
     width: 100%;
   }
 
+  .wrap {
+    text-align: center;
+  }
+
   h1 {
     color: ${color.background};
   }
