@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import GlobalHeader from './GlobalHeader';
 import Logo from './icons/Logo';
 import Menu from './navigation/Menu';
+import PrimaryCta from './navigation/PrimaryCta';
 import MenuButton from './navigation/MenuButton';
 import MobileMenu from './navigation/MobileMenu';
 import media from '../styles/media';
@@ -16,7 +17,7 @@ const HeaderStyle = styled.header`
   position: absolute;
   width: 100%;
   z-index: 1;
-  position: absolute;
+  position: fixed;
 
   .wrap {
     display: flex;
@@ -51,6 +52,7 @@ function Header({ dark }) {
           <a><Logo /></a>
         </Link>
         <Menu />
+        <PrimaryCta hideOnMobile ctaText="contact" />
         <MenuButton menu={menu} onClick={handleClick} />
       </div>
       <MobileMenu menu={menu} />

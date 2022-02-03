@@ -30,27 +30,21 @@ const HeadingGroup = styled.div`
   h3 {
     max-width: 15em;
   }
-
-  a {
-    margin-bottom: 2em;
-  }
-
-  @media ${media.secondary} {
-    margin-bottom: 2em;
-  }
 `;
 
 
 const TextCallout = ({ heading, text, link, href}) => (
   <TextCalloutStyle>
-    <HeadingGroup>
-      <div className="mark"/>
-      <h3>{heading}</h3>
-      <p>{text}</p>
-      <SecondaryCta
-        ctaText={link}
-      />
-    </HeadingGroup>
+    <div className="wrap">
+      <HeadingGroup>
+        <div className="mark"/>
+        <h3>{heading}</h3>
+        <p>{text}</p>
+        <SecondaryCta
+          ctaText={link}
+        />
+      </HeadingGroup>
+    </div>
   </TextCalloutStyle>
 );
 

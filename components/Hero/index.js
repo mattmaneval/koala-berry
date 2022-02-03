@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-// import ButtonCta from '../navigation/ButtonCta';
+import PrimaryCta from '../navigation/PrimaryCta';
 import media from '../../styles/media';
 import theme from '../../styles/theme';
 
@@ -17,21 +17,20 @@ const HeroStyle = styled.section`
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-
+  text-align: center;
+  
   @media ${media.secondary} {
     height: 80vh;
   }
 
   .inner-wrap {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
    h1 {
      color: ${color.background};
-   }
-
-   a {
-     display: inline-block;
    }
 `;
 
@@ -42,7 +41,7 @@ const HeroImage = styled.div`
   background-position: center;
   height: 0;
   margin-bottom: -7em;
-  padding-top: 65%;
+  padding-top: 50%;
   width: 100%;
 
   @media ${media.secondary} {
@@ -73,11 +72,8 @@ const Hero = () => (
     <div className="inner-wrap">
       <HeroImage />
       <h1>Frozen Yogurt</h1>
-      <H1Alt>
-        Grab a cup, pick a flavor, add toppings, weigh it, checkout, and
-        {' '}
-        <span>enjoy!</span>
-      </H1Alt>
+      <H1Alt>Premium Frozen Yogurt & Ice Cream</H1Alt>
+      <PrimaryCta ctaText="View Our Yogurt" />
     </div>
   </HeroStyle>
 );

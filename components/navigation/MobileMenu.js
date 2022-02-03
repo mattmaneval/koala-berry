@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Link from 'next/link';
+import PrimaryCta from './PrimaryCta';
 import theme from '../../styles/theme';
 
 const { color, fonts, space } = theme;
@@ -64,6 +65,7 @@ const MobileMenu = ({ menu }) => (
         <a>about</a>
       </Link>
     </nav>
+    <PrimaryCta ctaText="contact" />
   </MobileMenuStyle>
 );
 

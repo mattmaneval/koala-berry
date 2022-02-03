@@ -16,6 +16,7 @@ const SecondaryCtaStyles = styled.a`
   cursor: pointer;
   line-height: 1.6;
   display: ${({ display }) => (display || 'inline-block')};
+  margin-bottom: 0;
 
   @media ${media.secondary} {
     font-size: 0.75rem;
