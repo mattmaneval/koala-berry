@@ -1,0 +1,57 @@
+import styled from 'styled-components';
+import media from '../../styles/media';
+import SecondaryCta from '../navigation/SecondaryCta';
+
+const TextCalloutStyle = styled.section`
+  background-image: url('/assets/images/sparkles-white.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  p {
+    display: inline-block;
+    max-width: 22em;
+    color: black;
+
+    @media ${media.secondary} {
+      max-width: 100%;
+    }
+  }
+
+`;
+
+const HeadingGroup = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  h3 {
+    max-width: 15em;
+  }
+
+  a {
+    margin-bottom: 2em;
+  }
+
+  @media ${media.secondary} {
+    margin-bottom: 2em;
+  }
+`;
+
+
+const TextCallout = ({ heading, text, link, href}) => (
+  <TextCalloutStyle>
+    <HeadingGroup>
+      <div className="mark"/>
+      <h3>{heading}</h3>
+      <p>{text}</p>
+      <SecondaryCta
+        ctaText={link}
+      />
+    </HeadingGroup>
+  </TextCalloutStyle>
+);
+
+export default TextCallout;

@@ -3,6 +3,7 @@ import { GlobalStyle } from '../styles';
 import Header from '../components/Header';
 import SubPageHero from '../components/SubPageHero/index';
 // import Cards from '../components/Cards/index';
+import Map from '../components/Map/index';
 
 import Footer from '../components/Footer';
 
@@ -31,6 +32,7 @@ export default function Benefits() {
           <h3>You'll visit Koala Berry for the taste and enjoyment of our product, but hey, if it's healthy too that is all the better, don't you think?</h3>
         </div>
       </section>
+      <Map />
       <Footer />
     </>
   );

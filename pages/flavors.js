@@ -5,6 +5,7 @@ import SubPageHero from '../components/SubPageHero/index';
 import FlavorsList from '../components/FlavorsList';
 // import Cards from '../components/Cards/index';
 import Cards from '../components/Cards/index';
+import Map from '../components/Map/index';
 
 import styled from 'styled-components';
 // import ButtonCta from '../navigation/ButtonCta';
@@ -44,6 +45,7 @@ export default function Flavors() {
       </FlavorsText>
       <FlavorsList />
       <Cards />
+      <Map />
       <Footer />
     </>
   );

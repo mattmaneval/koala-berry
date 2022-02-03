@@ -15,7 +15,7 @@ const SecondaryCtaStyles = styled.a`
   width: fit-content;
   cursor: pointer;
   line-height: 1.6;
-  display: ${({ block }) => (block ? `block` : `inline-block`)};
+  display: ${({ display }) => (display || 'inline-block')};
 
   @media ${media.secondary} {
     font-size: 0.75rem;
@@ -27,9 +27,9 @@ const SecondaryCtaStyles = styled.a`
   }
 `;
 
-const SecondaryCta = ({ctaText, block}) => (
+const SecondaryCta = ({ctaText, display}) => (
   <SecondaryCtaStyles
-    block={block}
+    display={display}
   >
     {ctaText}
   </SecondaryCtaStyles>

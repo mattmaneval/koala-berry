@@ -64,7 +64,7 @@ const SecondaryPageStyles = styled.a`
 
 const Container = styled.div`
   background-image: url('${(props) => props.background}');
-  padding-top: 100%;
+  padding-top: 65%;
   transition: all .5s;
   background-size: cover;
   background-repeat: no-repeat;

@@ -6,6 +6,7 @@ import SubPageHero from '../components/SubPageHero/index';
 import FruitsList from '../components/FruitsList';
 import DryToppingsList from '../components/DryToppingsList';
 import SyrupList from '../components/SyrupList';
+import Map from '../components/Map/index';
 
 import Footer from '../components/Footer';
 
@@ -31,6 +32,7 @@ export default function Toppings() {
         <FruitsList />
         <DryToppingsList />
         <SyrupList />
+        <Map />
       <Footer />
     </>
   );

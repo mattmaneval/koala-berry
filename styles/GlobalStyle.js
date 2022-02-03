@@ -82,6 +82,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   h3 {
+    color: ${color.foreground};
     margin-bottom: 1em;
     font-size: 3.65em;
     font-family: ${fonts.title};
@@ -227,6 +228,7 @@ const GlobalStyle = createGlobalStyle`
 
   .mark {
     background-color: ${color.foregroundAlt};
+    display: inline-block;
     height: 0.4em;
     width: 2.5em;
     margin-bottom: 4em;

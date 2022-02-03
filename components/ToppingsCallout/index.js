@@ -22,10 +22,6 @@ const ToppingsCalloutStyle = styled.section`
 `;
 
 const HeadingGroup = styled.div`
-
-  h3, p {
-
-  }
   p {
     display: inline-block;
     max-width: 30em;
@@ -33,12 +29,11 @@ const HeadingGroup = styled.div`
 
   @media ${media.secondary} {
     margin-bottom: 2em;
-    /* text-align: center; */
   }
 `;
 
 const ToppingsCalloutImage = styled.div`
-  background-image: url('/assets/images/chocolate-bowl.png');
+  background-image: url('/assets/images/waffle-bowl.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;

@@ -3,6 +3,7 @@ import { GlobalStyle } from '../styles';
 import Header from '../components/Header';
 import SubPageHero from '../components/SubPageHero/index';
 // import Cards from '../components/Cards/index';
+import Map from '../components/Map/index';
 
 import Footer from '../components/Footer';
 
@@ -26,6 +27,7 @@ export default function About() {
           <p>The Koala Berry LLC goal is to provide our customers with the opportunity to create their own delicious and wholesome confection in a portion sized perfectly for them.  Our self serve concept caters to the creativity, taste preferences and nutritional desires of every customer.  Our atmosphere is inviting and impeccably clean, encouraging patrons to visit often and enjoy their unique, self-inspired dessert.</p>
         </div>
       </section>
+      <Map />
       <Footer />
     </>
   );

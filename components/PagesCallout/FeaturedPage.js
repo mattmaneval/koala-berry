@@ -71,7 +71,7 @@ const Container = styled.div`
 
   @media ${media.primary} {
     margin-bottom: 2em;
-    padding-top: 100%;
+    padding-top: 65%;
   }
 `;
 
