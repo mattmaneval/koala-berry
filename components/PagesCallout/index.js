@@ -6,6 +6,7 @@ import SecondaryPage from './SecondaryPage';
 // import ProjectSecondary from './ProjectSecondary';
 // import BackgroundVideo from '../BackgroundVideo/index';
 // import PrimaryCta from '../navigation/PrimaryCta';
+import SectionHeading from '../SectionHeading/index';
 
 // Styles
 import media from '../../styles/media';
@@ -16,9 +17,9 @@ import theme from '../../styles/theme';
 const { color, fonts, space } = theme;
 
 const PagesCalloutStyles = styled.section`
-  ${mixins.innerWrap}
+
   @media ${media.primary} {
-    width: 100%;
+    /* width: 100%; */
   }
 
   .callout-grid {
@@ -34,7 +35,8 @@ const PagesCalloutStyles = styled.section`
 `;
 
 const PagesCallout = () => (
-  <PagesCalloutStyles className="no-padding-top">
+  <PagesCalloutStyles className="no-padding-top no-padding-bottom">
+    <SectionHeading text="Yogurt"/>
     <div className="callout-grid">
       <FeaturedPage
         background="/assets/images/icecream-stick.png"

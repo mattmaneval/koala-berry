@@ -8,7 +8,6 @@ const { color, fonts } = theme;
 
 const MenuStyle = styled.nav`
   font-family: ${fonts.fontBold};
-  transform: translateX(1.3em);
 
   @media ${media.primary} {
     display: none;

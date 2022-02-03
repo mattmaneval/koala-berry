@@ -184,6 +184,10 @@ const GlobalStyle = createGlobalStyle`
     &-padding-top {
       padding-top: 0;
     }
+
+    &-padding-bottom {
+      padding-bottom: 0;
+    }
   }
 
   .align-center {
