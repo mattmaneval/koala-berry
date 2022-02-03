@@ -26,7 +26,7 @@ const HeaderStyle = styled.header`
 
   svg {
     fill: ${({ dark }) => (dark ? color.foregroundAlt : color.background)};
-    width: 6em;
+    width: 7em;
 
     @media ${media.secondary} {
       width: 4.5em;

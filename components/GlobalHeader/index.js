@@ -10,7 +10,7 @@ const GlobalHeaderStyle = styled.div`
   justify-content: center;
   color: ${color.background};
   font-family: ${fonts.fontBold};
-  padding: 1em;
+  padding: 1.3em 0;
   line-height: 0;
   margin-bottom: 1em;
   font-size: 0.85em;

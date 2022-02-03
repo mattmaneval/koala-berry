@@ -54,7 +54,7 @@ const GlobalStyle = createGlobalStyle`
     color: ${color.foregroundAlt};
     display: inline-block;
     font-family: ${fonts.title};
-    font-size: min(13vw,5em);
+    font-size: min(13vw,7em);
     line-height: 1.1em;
     margin-bottom: 0.3em;
     text-transform: uppercase;
@@ -82,14 +82,14 @@ const GlobalStyle = createGlobalStyle`
   }
 
   h3 {
-    color: ${color.foregroundTert};
     margin-bottom: 1em;
-    font-size: 3.25em;
+    font-size: 3.65em;
     font-family: ${fonts.title};
     text-transform: uppercase;
 
     @media ${media.secondary} {
-      font-size: 2em;
+      font-size: 2.3em;
+      margin-bottom: 0.85em;
     }
   }
 
@@ -124,14 +124,19 @@ const GlobalStyle = createGlobalStyle`
   }
 
   p {
-    color: ${color.callout};
+    color: ${color.foreground};
     line-height: 1.5;
     font-family: ${fonts.fontBold};
-    font-size: 1.45em;
+    font-size: 1.15em;
     margin-bottom: 1em;
 
     &:last-of-type {
-      margin-bottom: 0;
+      // margin-bottom: 0;
+    }
+
+    @media ${media.primary} {
+      margin-bottom: 0.5rem;
+      font-size: 0.85rem;
     }
 
     a {
@@ -189,9 +194,10 @@ const GlobalStyle = createGlobalStyle`
     font-family: ${fonts.fontBold};
     font-size: 2.5em;
     line-height: 1.5;
+    margin-bottom: 0.65em;
 
     @media ${media.secondary} {
-      font-size: 1.25em;
+      // font-size: 1.25em;
     }
 
     span {
@@ -209,6 +215,24 @@ const GlobalStyle = createGlobalStyle`
 
     @media ${media.secondary} {
       column-count: 1;
+    }
+  }
+
+  .sparkle-background {
+    background-image: url('/assets/images/sparkles-white.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .mark {
+    background-color: ${color.foregroundAlt};
+    height: 0.4em;
+    width: 2.5em;
+    margin-bottom: 4em;
+
+    @media ${media.secondary} {
+      margin-bottom: 2em;
     }
   }
 `;

@@ -13,8 +13,13 @@ const HeroStyle = styled.section`
   flex-direction: column;
   justify-content: flex-end;
 
+  background-image: url('/assets/images/sparkles-white.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
   @media ${media.secondary} {
-    height: 60vh;
+    height: 80vh;
   }
 
   .inner-wrap {
@@ -39,6 +44,10 @@ const HeroImage = styled.div`
   margin-bottom: -7em;
   padding-top: 65%;
   width: 100%;
+
+  @media ${media.secondary} {
+    padding-top: 100%;
+  }
 `;
 
 const H1Alt = styled.div`
