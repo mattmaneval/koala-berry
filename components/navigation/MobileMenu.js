@@ -8,6 +8,10 @@ const { color, fonts, space } = theme;
 const MobileMenuStyle = styled.div`
   width: 100vw;
   background-color: ${color.background};
+  background-image: url('/assets/images/sparkles-white.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   height: 100vh;
   transform: ${({ menu }) => (menu ? 'translateX(0)' : 'translateX(100vw)')};
   opacity: ${({ menu }) => (menu ? '1' : '0')};
@@ -19,7 +23,7 @@ const MobileMenuStyle = styled.div`
   bottom: 0;
   z-index: 2;
   overflow-x: hidden;
-  font-family: ${fonts.fontBlack};
+  font-family: ${fonts.title};
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -35,7 +39,7 @@ const MobileMenuStyle = styled.div`
       font-size: 1.875em;
       line-height: 0;
       padding: 1em 0 1em 0;
-      color: ${color.foregroundAlt};
+      color: ${color.foreground};
       text-align: right;
     }
   }
