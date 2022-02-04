@@ -2,21 +2,12 @@ import React from 'react';
 import Link from 'next/link';
 import styled from 'styled-components';
 import Logo from './icons/Logo';
-// import ButtonCta from './navigation/ButtonCta';
 import media from '../styles/media';
 import theme from '../styles/theme';
 
 import mixins from '../styles/mixins';
 
 const { color, fonts } = theme;
-
-const FooterImage = styled.div`
-  background-image: url('/assets/images/koala-bear.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  padding-top: 100%;
-`;
 
 const FooterStyles = styled.footer`
   background-image: url('/assets/images/sparkles-white.png');
@@ -60,20 +51,13 @@ const FooterStyles = styled.footer`
     &-hours,
     &-address  {
       margin-bottom: 1.65em;
-
-      @media ${media.secondary} {
-        /* margin: 0 3em 2em 0; */
-      }
     }
 
     &-hours {
       min-width: 13em;
     }
 
-    &-hours-row {
-      /* display: flex;
-      justify-content: space-between; */
-    }
+
 
     &-address {
       span {
@@ -82,7 +66,6 @@ const FooterStyles = styled.footer`
     }
 
     &-contact {
-      /* display: flex; */
       font-size: 1.25em;
       margin-bottom: 2em;
 
@@ -120,10 +103,6 @@ const MenuStyle = styled.nav`
   font-family: ${fonts.fontBold};
   margin-bottom: 2em;
 
-  @media ${media.primary} {
-    /* display: none; */
-  }
-
   a {
     ${mixins.animate}
     box-sizing: border-box;
@@ -146,7 +125,7 @@ const Footer = () => (
   <FooterStyles>
     <div className="wrap">
       <div>
-      <Logo />
+        <Logo />
         <MenuStyle>
           <Link href="/flavors">
             <a>flavors</a>

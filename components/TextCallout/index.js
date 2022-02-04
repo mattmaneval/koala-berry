@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 import media from '../../styles/media';
-import SecondaryCta from '../navigation/SecondaryCta';
-
+import PrimaryCta from '../navigation/PrimaryCta';
 
 const TextCalloutStyle = styled.section`
   background-image: url('/assets/images/sparkles-white.png');
@@ -16,6 +15,7 @@ const TextCalloutStyle = styled.section`
 
     @media ${media.secondary} {
       max-width: 100%;
+      margin-bottom: 1em;
     }
   }
 
@@ -36,15 +36,14 @@ const HeadingGroup = styled.div`
   }
 `;
 
-
 const TextCallout = ({ heading, text, link, href}) => (
   <TextCalloutStyle>
     <div className="wrap">
       <HeadingGroup>
-        <div className="mark"/>
+        <div className="mark" />
         <h3>{heading}</h3>
         <p>{text}</p>
-        <SecondaryCta
+        <PrimaryCta
           ctaText={link}
         />
       </HeadingGroup>

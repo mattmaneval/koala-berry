@@ -1,23 +1,16 @@
 import Head from 'next/head';
+import styled from 'styled-components';
 import { GlobalStyle } from '../styles';
 import Header from '../components/Header';
 import SubPageHero from '../components/SubPageHero/index';
 import FlavorsList from '../components/FlavorsList';
-// import Cards from '../components/Cards/index';
-// import Cards from '../components/Cards/index';
 import LocationCallout from '../components/LocationCallout/index';
 import Map from '../components/Map/index';
-
-
 import TextCallout from '../components/TextCallout/index';
-import styled from 'styled-components';
-// import ButtonCta from '../navigation/ButtonCta';
-import media from '../styles/media';
 import theme from '../styles/theme';
-
 import Footer from '../components/Footer';
 
-const { color, fonts } = theme;
+const { color } = theme;
 
 const FlavorsText = styled.section`
   background-color: ${color.foregroundAlt};

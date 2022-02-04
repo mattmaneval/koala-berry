@@ -1,15 +1,10 @@
 import styled from 'styled-components';
 
 // Components
-// import PrimaryCta from '../navigation/PrimaryCta';
 import PageDescription from './PageDescription';
 
 // Styles
 import media from '../../styles/media';
-import mixins from '../../styles/mixins';
-import theme from '../../styles/theme';
-
-const { color, fonts, space } = theme;
 
 const SecondaryPageStyles = styled.a`
   cursor: pointer;
@@ -31,14 +26,6 @@ const SecondaryPageStyles = styled.a`
         transform: none;
         text-align: left;
       }
-
-      /* div {
-        color: ${color.background};
-
-        @media ${media.primary} {
-          color: ${color.foreground};
-        }
-      } */
     }
 
     &:hover .project-image {
@@ -77,7 +64,7 @@ const Container = styled.div`
 `;
 
 const SecondaryPage = ({ background, title, subtitle, href }) => (
-    <SecondaryPageStyles>
+  <SecondaryPageStyles>
     <div className="project-secondary">
       <Container className="project-image" background={background} />
       <div className="project-text">
@@ -86,8 +73,8 @@ const SecondaryPage = ({ background, title, subtitle, href }) => (
           subtitle={subtitle}
         />
       </div>
-      </div>
-    </SecondaryPageStyles>
-  )
+    </div>
+  </SecondaryPageStyles>
+);
 
 export default SecondaryPage;

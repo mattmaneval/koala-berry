@@ -19,8 +19,6 @@ const MenuStyle = styled.nav`
     display: inline-block;
     line-height: 0;
     padding: 1em;
-    /* color: ${color.foregroundAlt}; */
-    /* color: ${color.background}; */
     border-bottom: 4.5px solid transparent;
     border-bottom-width: calc(100% - 2em);
 

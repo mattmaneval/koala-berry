@@ -6,16 +6,9 @@ import SecondaryPage from './SecondaryPage';
 
 // Styles
 import media from '../../styles/media';
-// import theme from '../../styles/theme';
-
-
-// const { color, fonts, space } = theme;
 
 const PagesCalloutStyles = styled.section`
-
-  @media ${media.primary} {
-    /* width: 100%; */
-  }
+  padding-bottom: 0;
 
   .callout-grid {
     display: grid;
@@ -25,13 +18,13 @@ const PagesCalloutStyles = styled.section`
     @media ${media.primary} {
       grid-template-columns: repeat(1, 1fr);
       grid-gap: 2em;
+      padding-bottom: 2em;
     }
   }
 `;
 
 const PagesCallout = () => (
-  <PagesCalloutStyles className="no-padding-top no-padding-bottom">
-
+  <PagesCalloutStyles className="no-padding-top">
     <div className="callout-grid">
       <FeaturedPage
         background="/assets/images/icecream-stick.png"

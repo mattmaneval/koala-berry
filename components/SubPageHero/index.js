@@ -1,20 +1,19 @@
-import styled, { css } from 'styled-components';
-import media from '../../styles/media';
+import styled from 'styled-components';
 import theme from '../../styles/theme';
 
-const { color, fonts } = theme;
+const { color } = theme;
 
 const SubPageHeroStyle = styled.section`
- background-image: url('${(props) => props.backgroundImage}');
- background-size: cover;
- background-repeat: no-repeat;
- background-position: center;
- height: 80vh;
- display: flex;
- flex-direction: column;
- justify-content: flex-end;
+  background-image: url('${(props) => props.backgroundImage}');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 
- &:before {
+  &:before {
     background: linear-gradient(to top, black 5%, transparent);
     bottom: 0;
     content: "";

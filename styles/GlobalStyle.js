@@ -195,12 +195,19 @@ const GlobalStyle = createGlobalStyle`
   }
 
   .title {
-    color: transparent;
     font-family: ${fonts.fontBold};
-    font-size: 3em;
+    font-size: 2.65rem;
     line-height: 1.15;
     margin-bottom: 0.2em;
-    -webkit-text-stroke: 1.3px ${color.background};
+
+    @media ${media.secondary} {
+      font-size: 2rem;
+    }
+
+    &.alt {
+      color: transparent;
+      -webkit-text-stroke: 1.3px ${color.background};
+    }
   }
 
   .h1-alt {

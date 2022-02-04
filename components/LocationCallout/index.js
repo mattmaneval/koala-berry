@@ -3,8 +3,7 @@ import styled from 'styled-components';
 // Styles
 import theme from '../../styles/theme';
 
-const { color, fonts } = theme;
-
+const { color } = theme;
 
 const LocationCalloutStyle = styled.section`
   background: linear-gradient(45deg,${color.callout},${color.foregroundAlt});

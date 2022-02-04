@@ -2,15 +2,12 @@ import Head from 'next/head';
 import { GlobalStyle } from '../styles';
 import Header from '../components/Header';
 import SubPageHero from '../components/SubPageHero/index';
-// import Cards from '../components/Cards/index';
 import FruitsList from '../components/FruitsList';
 import DryToppingsList from '../components/DryToppingsList';
 import SyrupList from '../components/SyrupList';
 import LocationCallout from '../components/LocationCallout/index';
 import Map from '../components/Map/index';
-// import SectionHeading from '../SectionHeading/index';
 import TextCallout from '../components/TextCallout/index';
-
 import Footer from '../components/Footer';
 
 export default function Toppings() {
@@ -32,11 +29,11 @@ export default function Toppings() {
         link="Learn More"
         href=""
       />
-        <FruitsList />
-        <DryToppingsList />
-        <SyrupList />
-        <LocationCallout />
-        <Map />
+      <FruitsList />
+      <DryToppingsList />
+      <SyrupList />
+      <LocationCallout />
+      <Map />
       <Footer />
     </>
   );

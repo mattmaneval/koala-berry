@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 // Components
-// import BackgroundVideo from '../BackgroundVideo/index';
 import SecondaryCta from '../navigation/SecondaryCta';
 
 // Styles
@@ -9,7 +8,7 @@ import media from '../../styles/media';
 import mixins from '../../styles/mixins';
 import theme from '../../styles/theme';
 
-const { color, fonts, space } = theme;
+const { color, fonts } = theme;
 
 const PageDescriptionStyles = styled.div`
   text-align: center;
@@ -20,9 +19,6 @@ const PageDescriptionStyles = styled.div`
 
   .title {
     color: ${color.background};
-    font-family: ${fonts.title};
-    font-size: 2.65em;
-    margin-bottom: 0.5em;
 
     @media ${media.secondary} {
       color: ${color.foreground};
@@ -52,15 +48,12 @@ const PageDescriptionStyles = styled.div`
   }
 `;
 
-const PageDescription = ({ title, subtitle, href }) =>{
-
-  return (
-    <PageDescriptionStyles>
-      <div className="title">{title}</div>
-      <p className="project-item-description">{subtitle}</p>
-      <SecondaryCta ctaText="Learn more" />
-    </PageDescriptionStyles>
-  );
-};
+const PageDescription = ({ title, subtitle, href }) => (
+  <PageDescriptionStyles>
+    <div className="title">{title}</div>
+    <p className="project-item-description">{subtitle}</p>
+    <SecondaryCta ctaText="Learn more" />
+  </PageDescriptionStyles>
+);
 
 export default PageDescription;

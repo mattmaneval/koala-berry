@@ -2,12 +2,9 @@ import Head from 'next/head';
 import { GlobalStyle } from '../styles';
 import Header from '../components/Header';
 import SubPageHero from '../components/SubPageHero/index';
-// import Cards from '../components/Cards/index';
 import Map from '../components/Map/index';
-// import SectionHeading from '../SectionHeading/index';
 import TextCallout from '../components/TextCallout/index';
 import LocationCallout from '../components/LocationCallout/index';
-
 import Footer from '../components/Footer';
 
 export default function Benefits() {

@@ -1,9 +1,8 @@
 import styled from 'styled-components';
-// import PropTypes from 'prop-types';
 import media from '../../styles/media';
 import theme from '../../styles/theme';
 
-const { color, space, fonts } = theme;
+const { color, fonts } = theme;
 
 const ButtonCtaStyle = styled.a`
   display: flex;

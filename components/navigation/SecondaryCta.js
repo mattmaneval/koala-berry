@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import media from '../../styles/media';
 import theme from '../../styles/theme';
 
-const { color, fonts } = theme;
+const { color } = theme;
 
 const SecondaryCtaStyles = styled.a`
   border-bottom: 3px solid ${color.foregroundAlt};

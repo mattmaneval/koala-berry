@@ -1,13 +1,10 @@
 import styled from 'styled-components';
 
 // Components
-
-// import PrimaryCta from '../navigation/PrimaryCta';
 import PageDescription from './PageDescription';
 
 // Styles
 import media from '../../styles/media';
-// import mixins from '../../styles/mixins';
 import theme from '../../styles/theme';
 
 const { color } = theme;

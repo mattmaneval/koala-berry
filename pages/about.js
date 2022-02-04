@@ -2,11 +2,9 @@ import Head from 'next/head';
 import { GlobalStyle } from '../styles';
 import Header from '../components/Header';
 import SubPageHero from '../components/SubPageHero/index';
-// import Cards from '../components/Cards/index';
 import LocationCallout from '../components/LocationCallout/index';
 import Map from '../components/Map/index';
 import SectionHeading from '../components/SectionHeading/index';
-
 import Footer from '../components/Footer';
 
 export default function About() {

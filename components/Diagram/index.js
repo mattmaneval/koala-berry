@@ -1,16 +1,5 @@
 import React from 'react';
-import Link from 'next/link';
 import styled from 'styled-components';
-import Logo from '../icons/Logo';
-// import ButtonCta from './navigation/ButtonCta';
-import media from '../../styles/media';
-import mixins from '../../styles/mixins';
-import theme from '../../styles/theme';
-
-
-
-const { color, fonts } = theme;
-
 
 const DiagramStyles = styled.div`
   background-image: url('/assets/images/sparkles-white.png');

@@ -6,22 +6,15 @@ import theme from '../../styles/theme';
 const { color, fonts } = theme;
 
 const HeroStyle = styled.section`
+  background: linear-gradient(45deg,${color.callout},${color.foregroundAlt});
+  background-size: 400% 400%;
+  animation: gradientbanner 7s ease infinite;
   align-items: center;
-  background-color: ${color.foregroundAlt};
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-
-  background-image: url('/assets/images/sparkles-white.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
   text-align: center;
-
-  /* background: linear-gradient(45deg,${color.callout},${color.foregroundAlt});
-  background-size: 400% 400%;
-  animation: gradientbanner 7s ease infinite; */
 
   @media ${media.secondary} {
     height: 80vh;
@@ -54,13 +47,12 @@ const HeroImage = styled.div`
 `;
 
 const H1Alt = styled.div`
-  color: ${color.callout};
+  color: ${color.foregroundTert};
   display: inline-block;
   font-family: ${fonts.fontBold};
   font-size: 1.45em;
   line-height: 1.5;
   margin-bottom: 1em;
-  /* max-width: 20em; */
 
   @media ${media.secondary} {
     font-size: 1.25em;

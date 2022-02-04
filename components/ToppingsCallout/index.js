@@ -1,9 +1,10 @@
 import styled from 'styled-components';
-import media from '../../styles/media';
-import theme from '../../styles/theme';
-// import ButtonCta from '../navigation/ButtonCta';
+
+// Components
 import SecondaryCta from '../navigation/SecondaryCta';
-const { color, fonts } = theme;
+
+// Styles
+import media from '../../styles/media';
 
 const ToppingsCalloutStyle = styled.section`
   background-image: url('/assets/images/sparkles-white.png');
@@ -48,12 +49,16 @@ function YogurtsToppingsCallout() {
   return (
     <ToppingsCalloutStyle className="no-padding-top">
       <div className="wrap">
-      <ToppingsCalloutImage />
+        <ToppingsCalloutImage />
         <HeadingGroup>
           <div className="mark" />
           <h3>Endless Toppings</h3>
-          <p>Super fresh fruit, premium fountain syrups and oodles of healthy and sweet toppings make Koala Berry a special treat for all.
-          Mix and match over 50 toppings and 18 frozen yogurt or ice cream flavors.  You have almost limitless combinations to enjoy.</p>
+          <p>
+            Super fresh fruit, premium fountain syrups and oodles of healthy
+            and sweet toppings make Koala Berry a special treat for all.
+            Mix and match over 50 toppings and 18 frozen yogurt or ice cream
+            flavors.  You have almost limitless combinations to enjoy.
+          </p>
           <SecondaryCta
             ctaText="Learn more"
             block
@@ -62,6 +67,6 @@ function YogurtsToppingsCallout() {
       </div>
     </ToppingsCalloutStyle>
   );
-};
+}
 
 export default YogurtsToppingsCallout;

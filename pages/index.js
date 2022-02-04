@@ -5,8 +5,6 @@ import Hero from '../components/Hero/index';
 import PagesCallout from '../components/PagesCallout/index';
 import TextCallout from '../components/TextCallout/index';
 import AboutCallout from '../components/AboutCallout/index';
-import Diagram from '../components/Diagram/index';
-// import FeaturedPage from '../components/PagesCallout/FeaturedPage';
 import LocationCallout from '../components/LocationCallout/index';
 import Map from '../components/Map/index';
 import Footer from '../components/Footer';
@@ -32,7 +30,6 @@ export default function Home() {
         link="Learn More"
         href=""
       />
-
       <TextCallout
         heading="Endless Toppings"
         text="Super fresh fruit, premium fountain syrups and oodles of healthy and sweet toppings make Koala Berry a special treat for all. Mix and match over 50 toppings and 18 frozen yogurt or ice cream flavors.  You have almost limitless combinations to enjoy."
