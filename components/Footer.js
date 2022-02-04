@@ -1,7 +1,13 @@
 import React from 'react';
 import Link from 'next/link';
 import styled from 'styled-components';
+
+// Components
+import PrimaryCta from './navigation/PrimaryCta';
 import Logo from './icons/Logo';
+import SubFooter from './SubFooter';
+
+// Styles
 import media from '../styles/media';
 import theme from '../styles/theme';
 
@@ -10,10 +16,6 @@ import mixins from '../styles/mixins';
 const { color, fonts } = theme;
 
 const FooterStyles = styled.footer`
-  /* background-image: url('/assets/images/sparkles-white.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center; */
   padding: 6em 0;
 
   .wrap {
@@ -22,7 +24,7 @@ const FooterStyles = styled.footer`
     justify-content: space-between;
 
     @media ${media.secondary} {
-      flex-direction: column-reverse;
+      flex-direction: column;
     }
   }
 
@@ -117,7 +119,6 @@ const MenuStyle = styled.nav`
     line-height: 0;
     padding: 1em 0;
     border-bottom-width: calc(100% - 2em);
-    color: ${color.callout};
 
     &:hover {
       border-color: currentColor;
@@ -131,7 +132,7 @@ const year = new Date().getFullYear();
 const Footer = () => (
   <FooterStyles>
     <div className="wrap">
-      <div>
+        <div>
         <Logo />
         <MenuStyle>
           <Link href="/flavors">
@@ -159,21 +160,20 @@ const Footer = () => (
             </div>
           </div>
         </div>
-
-        <div className="footer-bottom">
-          <div className="copyright">
-            Copyright &#169;
-            {' '}
-            {year}
-            {' '}
-            Koala Berry. All Rights Reserved. Site by
-            {' '}
-            <a rel="noreferrer" target="_blank" href="https://mattmaneval.com/">Matt Maneval</a>
-          </div>
         </div>
-      </div>
+
+        <div>
+
+        <PrimaryCta
+          ctaText="contact"
+          ctaHref="tel:419-725-5558"
+        />
+        </div>
+
+
 
     </div>
+    <SubFooter />
   </FooterStyles>
 );
 
