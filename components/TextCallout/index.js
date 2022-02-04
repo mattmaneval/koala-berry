@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import media from '../../styles/media';
 import SecondaryCta from '../navigation/SecondaryCta';
 
+
 const TextCalloutStyle = styled.section`
   background-image: url('/assets/images/sparkles-white.png');
   background-size: cover;
@@ -18,6 +19,9 @@ const TextCalloutStyle = styled.section`
     }
   }
 
+  .image-container {
+    max-width: 40%;
+  }
 `;
 
 const HeadingGroup = styled.div`

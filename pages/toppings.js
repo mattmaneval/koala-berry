@@ -6,7 +6,10 @@ import SubPageHero from '../components/SubPageHero/index';
 import FruitsList from '../components/FruitsList';
 import DryToppingsList from '../components/DryToppingsList';
 import SyrupList from '../components/SyrupList';
+import LocationCallout from '../components/LocationCallout/index';
 import Map from '../components/Map/index';
+// import SectionHeading from '../SectionHeading/index';
+import TextCallout from '../components/TextCallout/index';
 
 import Footer from '../components/Footer';
 
@@ -21,17 +24,18 @@ export default function Toppings() {
       <SubPageHero
         backgroundImage="/assets/images/toppings.jpeg"
         heading="Toppings"
-        subHeading="Self serve mean self inspired."
+        subHeading="We've got a lot!"
       />
-      <section className="sparkle-background">
-        <div className="mini-wrap">
-          <p>Koala Berry is proud to offer a mind blowing selection of Frozen Yogurt, Ice Cream, Fresh Fruit and Candy toppings including many old fashioned Ice Cream parlor syrups.  The flavor combinations are endless.</p>
-        </div>
-      </section>
-
+      <TextCallout
+        heading="Toppings"
+        text="Koala Berry is proud to offer a mind blowing selection of Frozen Yogurt, Ice Cream, Fresh Fruit and Candy toppings including many old fashioned Ice Cream parlor syrups.  The flavor combinations are endless."
+        link="Learn More"
+        href=""
+      />
         <FruitsList />
         <DryToppingsList />
         <SyrupList />
+        <LocationCallout />
         <Map />
       <Footer />
     </>

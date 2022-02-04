@@ -1,10 +1,11 @@
 import MenuItem from '../MenuItem';
 import { syrupData } from '../../data/syrup-local';
+import SectionHeading from '../SectionHeading/index';
 
 const SyrupList = () => (
   <section className="align-center sparkle-background">
     <div className="wrap">
-      <h3>Syrup</h3>
+      <SectionHeading text="Syrups" />
     </div>
     <div className="wrap list">
       {Object.keys(syrupData).map((key) => (

@@ -17,7 +17,7 @@ const HeaderStyle = styled.header`
   position: absolute;
   width: 100%;
   z-index: 1;
-  position: fixed;
+  position: absolute;
 
   .wrap {
     display: flex;

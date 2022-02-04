@@ -4,7 +4,10 @@ import theme from '../../styles/theme';
 const { color, fonts } = theme;
 
 const GlobalHeaderStyle = styled.div`
-  background-color: ${color.callout};
+  /* background-color: ${color.callout}; */
+  background: linear-gradient(45deg,${color.callout},${color.foregroundAlt});
+  background-size: 400% 400%;
+  animation: gradientbanner 7s ease infinite;
   display: flex;
   align-items: center;
   justify-content: center;

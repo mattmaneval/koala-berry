@@ -18,7 +18,11 @@ const HeroStyle = styled.section`
   background-repeat: no-repeat;
   background-position: center;
   text-align: center;
-  
+
+  /* background: linear-gradient(45deg,${color.callout},${color.foregroundAlt});
+  background-size: 400% 400%;
+  animation: gradientbanner 7s ease infinite; */
+
   @media ${media.secondary} {
     height: 80vh;
   }

@@ -1,10 +1,11 @@
 import MenuItem from '../MenuItem';
 import { fruitsData } from '../../data/fruits-local';
+import SectionHeading from '../SectionHeading/index';
 
 const FruitsList = () => (
   <section className="align-center sparkle-background">
     <div className="wrap">
-      <h3>Fresh Fruit</h3>
+      <SectionHeading text="Fresh Fruit" />
     </div>
     <div className="wrap list">
 

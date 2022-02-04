@@ -7,10 +7,10 @@ import PageDescription from './PageDescription';
 
 // Styles
 import media from '../../styles/media';
-import mixins from '../../styles/mixins';
+// import mixins from '../../styles/mixins';
 import theme from '../../styles/theme';
 
-const { color, fonts, space } = theme;
+const { color } = theme;
 
 const FeaturedPageStyles = styled.div`
   grid-column: 1 / -1;

@@ -194,12 +194,21 @@ const GlobalStyle = createGlobalStyle`
     text-align: center;
   }
 
+  .title {
+    color: transparent;
+    font-family: ${fonts.fontBold};
+    font-size: 3em;
+    line-height: 1.15;
+    margin-bottom: 0.2em;
+    -webkit-text-stroke: 1.3px ${color.background};
+  }
+
   .h1-alt {
-    color: ${color.callout};
+    color: ${color.background};
     font-family: ${fonts.fontBold};
     font-size: 2.5em;
     line-height: 1.5;
-    margin-bottom: 0.65em;
+    // margin-bottom: 0.65em;
 
     @media ${media.secondary} {
       // font-size: 1.25em;
@@ -239,6 +248,19 @@ const GlobalStyle = createGlobalStyle`
 
     @media ${media.secondary} {
       margin-bottom: 2em;
+    }
+  }
+
+  @keyframes gradientbanner {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
     }
   }
 `;
