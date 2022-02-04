@@ -52,7 +52,11 @@ function Header({ dark }) {
           <a><Logo /></a>
         </Link>
         <Menu />
-        <PrimaryCta hideOnMobile ctaText="contact" />
+        <PrimaryCta
+          hideOnMobile
+          ctaText="contact"
+          ctaHref="tel:419-725-5558"
+        />
         <MenuButton menu={menu} onClick={handleClick} />
       </div>
       <MobileMenu menu={menu} />

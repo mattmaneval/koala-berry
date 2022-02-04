@@ -56,6 +56,7 @@ const TextCallout = ({ heading, text, link, href, light}) => (
         <p>{text}</p>
         <PrimaryCta
           ctaText={link}
+          ctaHref={href}
         />
       </HeadingGroup>
     </div>

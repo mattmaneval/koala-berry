@@ -71,6 +71,7 @@ const SecondaryPage = ({ background, title, subtitle, href }) => (
         <PageDescription
           title={title}
           subtitle={subtitle}
+          href={href}
         />
       </div>
     </div>

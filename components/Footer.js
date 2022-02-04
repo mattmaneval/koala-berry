@@ -43,6 +43,7 @@ const FooterStyles = styled.footer`
     &-contact {
       color: ${color.foregroundAlt};
       font-family: ${fonts.fontBold};
+
       span {
         line-height: 1.5em;
       }
@@ -71,6 +72,12 @@ const FooterStyles = styled.footer`
 
       @media ${media.secondary} {
         flex-direction: column;
+      }
+
+      a {
+        margin-bottom: 1em;
+        display: block;
+        font-size: 1em;
       }
     }
 
@@ -141,11 +148,11 @@ const Footer = () => (
           </Link>
         </MenuStyle>
         <div className="footer-contact">
-
           <div className="footer-address">
             <span>6710 Central Ave</span>
             <span>Toledo, OH</span>
           </div>
+          <a href="tel:419-725-5558">419-725-5558</a>
           <div className="footer-hours">
             <div className="footer-hours-row">
               <span>Open Everyday Noon to 10 pm</span>

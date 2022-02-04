@@ -50,7 +50,7 @@ const PageDescription = ({ title, subtitle, href }) => (
   <PageDescriptionStyles>
     <div className="title">{title}</div>
     <p className="project-item-description">{subtitle}</p>
-    <PrimaryCta ctaText="Learn more" />
+    <PrimaryCta ctaText="Learn more" ctaHref={href} />
   </PageDescriptionStyles>
 );
 

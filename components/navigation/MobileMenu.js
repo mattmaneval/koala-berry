@@ -55,17 +55,17 @@ const MobileMenu = ({ menu }) => (
       <Link href="/flavors">
         <a>flavors</a>
       </Link>
-      <Link href="/">
+      <Link href="/toppings">
         <a>toppings</a>
       </Link>
-      <Link href="/">
+      <Link href="/benefits">
         <a>benefits</a>
       </Link>
-      <Link href="/">
+      <Link href="/about">
         <a>about</a>
       </Link>
     </nav>
-    <PrimaryCta ctaText="contact" />
+    <PrimaryCta ctaText="contact" ctaHref="tel:419-725-5558" />
   </MobileMenuStyle>
 );
 

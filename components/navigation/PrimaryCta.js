@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import styled from 'styled-components';
 import media from '../../styles/media';
 import theme from '../../styles/theme';
@@ -25,8 +26,12 @@ const PrimaryCtaStyles = styled.a`
   }
 `;
 
-const PrimaryCta = ({ ctaText, hideOnMobile}) => (
-  <PrimaryCtaStyles hideOnMobile={hideOnMobile}>{ctaText}</PrimaryCtaStyles>
+const PrimaryCta = ({ ctaText, hideOnMobile, ctaHref }) => (
+  <Link passHref href={ctaHref}>
+    <PrimaryCtaStyles hideOnMobile={hideOnMobile} >
+      {ctaText}
+    </PrimaryCtaStyles>
+  </Link>
 );
 
 export default PrimaryCta;

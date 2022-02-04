@@ -19,7 +19,7 @@ export default function Benefits() {
         backgroundImage="/assets/images/waffle.jpeg"
         heading="Benefits"
         subHeading="Delicious taste, healthy lifestyle"
-        text="The benefits of yogurt have been talked about for years. Ours starts with dairy fresh milk, real fruit purees, natural flavors and lots of beneficial live yogurt cultures called probiotics.  That’s what premuim Koala Berry yogurts are all about. Our yogurt is specially blended to ensure a smooth and creamy spoonful that brings delight in ever bite.  Continued care is taken at the store to be certain our products are as creamy and delicious as the day we opened for business way back in 2011."
+        text="You'll visit Koala Berry for the taste and enjoyment of our product, but hey, if it's healthy too that is all the better, don't you think?"
       />
       <section className="sparkle-background">
         <div className="inner-wrap">
@@ -30,7 +30,6 @@ export default function Benefits() {
           <p>Truth be told, Koala Berry didn't open as a health food store.  It was opened as a fun lively place where you could enjoy a delicious self-inspired dessert, sized just right for you. Our focus is on great taste, smooth texture and a delightful experience for our customers.  Today's consumers are savvy.  If a buying choice can do double duty, all the better. Wholesome dairy, fresh fruits, wholegrain toppings, and watchful eye on calories, fats and sugars can be a good thing.  Not to mention the benefits of Certified Live and Active Cultures in our yogurt.</p>
           <p>So much has been said and written about the health benefits of yogurt.  One of the best and most trusted sources of good information on the health benefits of yogurt is at WebMD.</p>
           <p>Another great source of information about the health benefits of yogurt is Dr. Memmet Oz and the RealAge website.  We encourage you to visit these websites to learn more.</p>
-          <h3>You'll visit Koala Berry for the taste and enjoyment of our product, but hey, if it's healthy too that is all the better, don't you think?</h3>
         </div>
       </section>
       <LocationCallout />

@@ -22,19 +22,19 @@ export default function Home() {
         heading="Your very own unique, self-inspired dessert."
         text="Grab a cup, pick a flavor or two, add toppings, weight & checkout. Enjoy!"
         link="Learn More"
-        href=""
+        href="/flavors"
       />
       <AboutCallout
         heading="About Our Yogurt"
         text="The benefits of yogurt have been talked about for years. Ours starts with real dairy, fresh milk, real fruit purees, natural flavors and lots of beneficial live yogurt cultures called probiotics."
         link="Learn More"
-        href=""
+        href="/about"
       />
       <TextCallout
         heading="Endless Toppings"
         text="Super fresh fruit, premium fountain syrups and oodles of healthy and sweet toppings make Koala Berry a special treat for all. Mix and match over 50 toppings and 18 frozen yogurt or ice cream flavors.  You have almost limitless combinations to enjoy."
         link="Learn More"
-        href=""
+        href="/toppings"
       />
       <PagesCallout />
       <LocationCallout />

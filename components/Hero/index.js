@@ -69,7 +69,7 @@ const Hero = () => (
       <HeroImage />
       <h1>Frozen Yogurt</h1>
       <H1Alt>Premium Frozen Yogurt & Ice Cream</H1Alt>
-      <PrimaryCta ctaText="View Our Yogurt" />
+      <PrimaryCta ctaText="View Our Yogurt" ctaHref="/flavors" />
     </div>
   </HeroStyle>
 );

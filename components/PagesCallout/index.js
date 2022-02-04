@@ -30,21 +30,25 @@ const PagesCallout = () => (
         background="/assets/images/icecream-stick.png"
         title="flavors"
         subtitle="Self-serve means self-inspired."
+        href="/flavors"
       />
       <SecondaryPage
         background="/assets/images/toppings-bar.png"
         title="toppings"
         subtitle="We have alot!"
+        href="/toppings"
       />
       <SecondaryPage
         background="/assets/images/raspberry-yogurt.png"
         title="benefits"
         subtitle="Delicious taste, healthy lifestyle."
+        href="/benefits"
       />
       <FeaturedPage
         background="/assets/images/banner.png"
         title="about"
         subtitle="Learn more about Koala Berry."
+        href="/about"
       />
     </div>
   </PagesCalloutStyles>
