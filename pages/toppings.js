@@ -5,6 +5,7 @@ import SubPageHero from '../components/SubPageHero/index';
 import FruitsList from '../components/FruitsList';
 import DryToppingsList from '../components/DryToppingsList';
 import SyrupList from '../components/SyrupList';
+import GiftCardsCallout from '../components/GiftCardsCallout/index';
 import LocationCallout from '../components/LocationCallout/index';
 import Map from '../components/Map/index';
 import TextCallout from '../components/TextCallout/index';
@@ -27,6 +28,7 @@ export default function Toppings() {
       <FruitsList />
       <DryToppingsList />
       <SyrupList />
+      <GiftCardsCallout />
       <LocationCallout />
       <Map />
       <Footer />

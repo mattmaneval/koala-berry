@@ -7,10 +7,9 @@ import theme from '../../styles/theme';
 const { color, fonts } = theme;
 
 const SubPageHeroStyle = styled.section`
-  background: linear-gradient(45deg,${color.callout},${color.foregroundAlt});
-  background-size: 400% 400%;
-  animation: gradientbanner 7s ease infinite;
-  height: 90vh;
+  background: linear-gradient(to bottom,${color.callout},${color.foregroundAlt});
+  height: 70vh;
+  min-height: 37em;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -46,11 +45,9 @@ const HeroImage = styled.div`
 const SubPageHero = ({ backgroundImage, heading, subHeading, text}) => (
   <SubPageHeroStyle backgroundImage={backgroundImage}>
     <div className="mini-wrap">
-    <HeroImage />
       <div class="small-title">{heading}</div>
       <h4>{subHeading}</h4>
       <p>{text}</p>
-
     </div>
 
   </SubPageHeroStyle>

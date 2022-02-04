@@ -11,6 +11,7 @@ const HeroStyle = styled.section`
   animation: gradientbanner 7s ease infinite;
   align-items: center;
   height: 100vh;
+  min-height: 37em;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;

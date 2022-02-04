@@ -15,7 +15,7 @@ const PrimaryCtaStyles = styled.a`
   cursor: pointer;
   line-height: 1;
 
-  @media ${media.secondary} {
+  @media ${media.primary} {
     font-size: 0.95em;
     display: ${({ hideOnMobile }) => (hideOnMobile ? `none` : `inline-block`)};
   }

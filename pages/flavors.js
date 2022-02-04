@@ -4,6 +4,7 @@ import { GlobalStyle } from '../styles';
 import Header from '../components/Header';
 import SubPageHero from '../components/SubPageHero/index';
 import FlavorsList from '../components/FlavorsList';
+import GiftCardsCallout from '../components/GiftCardsCallout/index';
 import LocationCallout from '../components/LocationCallout/index';
 import Map from '../components/Map/index';
 import theme from '../styles/theme';
@@ -34,6 +35,7 @@ export default function Flavors() {
         text="Koala Berry is self serve so you always get just what you desire.  Come on in, grab a cup and add the yogurt or ice cream of your choice… we have 18 flavors everyday… add your favorite toppings, over 50, including many fresh fruits and healthy choices... top it off with a nice selection of syrups too."
       />
       <FlavorsList />
+      <GiftCardsCallout />
       <LocationCallout />
       <Map />
       <Footer />

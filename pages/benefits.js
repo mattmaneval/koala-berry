@@ -4,6 +4,7 @@ import Header from '../components/Header';
 import SubPageHero from '../components/SubPageHero/index';
 import Map from '../components/Map/index';
 import TextCallout from '../components/TextCallout/index';
+import GiftCardsCallout from '../components/GiftCardsCallout/index';
 import LocationCallout from '../components/LocationCallout/index';
 import Footer from '../components/Footer';
 
@@ -32,6 +33,7 @@ export default function Benefits() {
           <p>Another great source of information about the health benefits of yogurt is Dr. Memmet Oz and the RealAge website.  We encourage you to visit these websites to learn more.</p>
         </div>
       </section>
+      <GiftCardsCallout />
       <LocationCallout />
       <Map />
       <Footer />

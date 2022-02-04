@@ -6,7 +6,7 @@ import PageDescription from './PageDescription';
 // Styles
 import media from '../../styles/media';
 
-const SecondaryPageStyles = styled.a`
+const SecondaryPageStyles = styled.div`
   cursor: pointer;
   overflow: hidden;
   position: relative;

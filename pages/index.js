@@ -2,9 +2,11 @@ import Head from 'next/head';
 import { GlobalStyle } from '../styles';
 import Header from '../components/Header';
 import Hero from '../components/Hero/index';
-import PagesCallout from '../components/PagesCallout/index';
 import TextCallout from '../components/TextCallout/index';
 import AboutCallout from '../components/AboutCallout/index';
+import GiftCardsCallout from '../components/GiftCardsCallout/index';
+import PrivateEventsCallout from '../components/PrivateEventsCallout/index';
+import PagesCallout from '../components/PagesCallout/index';
 import LocationCallout from '../components/LocationCallout/index';
 import Map from '../components/Map/index';
 import Footer from '../components/Footer';
@@ -36,6 +38,8 @@ export default function Home() {
         link="Learn More"
         href="/toppings"
       />
+      <GiftCardsCallout />
+      <PrivateEventsCallout />
       <PagesCallout />
       <LocationCallout />
       <Map />
