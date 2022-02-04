@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 // Components
-import SecondaryCta from '../navigation/SecondaryCta';
+import PrimaryCta from '../navigation/PrimaryCta';
 
 // Styles
 import media from '../../styles/media';
@@ -41,10 +41,8 @@ const PageDescriptionStyles = styled.div`
 
   a {
     color: ${color.background};
-
-    @media ${media.secondary} {
-      color: ${color.foreground};
-    }
+    font-size: 1rem;
+    display: inline-flex;
   }
 `;
 
@@ -52,7 +50,7 @@ const PageDescription = ({ title, subtitle, href }) => (
   <PageDescriptionStyles>
     <div className="title">{title}</div>
     <p className="project-item-description">{subtitle}</p>
-    <SecondaryCta ctaText="Learn more" />
+    <PrimaryCta ctaText="Learn more" />
   </PageDescriptionStyles>
 );
 

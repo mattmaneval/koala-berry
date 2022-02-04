@@ -1,43 +1,58 @@
 import styled from 'styled-components';
+
+// Styles
+import media from '../../styles/media';
 import theme from '../../styles/theme';
 
-const { color } = theme;
+const { color, fonts } = theme;
 
 const SubPageHeroStyle = styled.section`
-  background-image: url('${(props) => props.backgroundImage}');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 80vh;
+  background: linear-gradient(45deg,${color.callout},${color.foregroundAlt});
+  background-size: 400% 400%;
+  animation: gradientbanner 7s ease infinite;
+  height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
 
-  &:before {
-    background: linear-gradient(to top, black 5%, transparent);
-    bottom: 0;
-    content: "";
-    height: 100%;
-    left: 0;
-    position: absolute;
-    width: 100%;
-  }
 
-  .wrap {
+  .mini-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
   }
 
-  h1 {
+  p {
     color: ${color.background};
   }
 `;
 
-const SubPageHero = ({ backgroundImage, heading, subHeading}) => (
+const HeroImage = styled.div`
+  background-image: url('/assets/images/group.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 0;
+  margin-bottom: -7em;
+  padding-top: 50%;
+  width: 100%;
+
+  @media ${media.secondary} {
+    padding-top: 100%;
+  }
+`;
+
+const SubPageHero = ({ backgroundImage, heading, subHeading, text}) => (
   <SubPageHeroStyle backgroundImage={backgroundImage}>
-    <div className="wrap">
-      <h1>{heading}</h1>
-      <div className="h1-alt">{subHeading}</div>
+    <div className="mini-wrap">
+    <HeroImage />
+      <div class="small-title">{heading}</div>
+      <h4>{subHeading}</h4>
+      <p>{text}</p>
+
     </div>
+
   </SubPageHeroStyle>
 );
 

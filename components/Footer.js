@@ -10,10 +10,10 @@ import mixins from '../styles/mixins';
 const { color, fonts } = theme;
 
 const FooterStyles = styled.footer`
-  background-image: url('/assets/images/sparkles-white.png');
+  /* background-image: url('/assets/images/sparkles-white.png');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center; */
   padding: 6em 0;
 
   .wrap {

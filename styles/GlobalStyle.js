@@ -95,11 +95,11 @@ const GlobalStyle = createGlobalStyle`
   }
 
   h4 {
-    color: ${color.foreground};
+    color: ${color.background};
     font-size: 2em;
     font-family: ${fonts.title};
-    margin-bottom: 2em;
-    // text-transform: uppercase;
+    margin-bottom: 1em;
+    text-transform: uppercase;
 
     @media ${media.secondary} {
       // font-size: 3=2em;
@@ -210,20 +210,29 @@ const GlobalStyle = createGlobalStyle`
     }
   }
 
-  .h1-alt {
+  .small-title {
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
     color: ${color.background};
     font-family: ${fonts.fontBold};
-    font-size: 2.5em;
+    font-size: 1em;
+    margin-bottom: 1em;
+  }
+
+  .h1-alt {
+    color: ${color.foregroundTert};
+    display: inline-block;
+    font-family: ${fonts.fontBold};
+    font-size: 1.45em;
     line-height: 1.5;
-    // margin-bottom: 0.65em;
+    margin-bottom: 1em;
 
     @media ${media.secondary} {
-      // font-size: 1.25em;
+      font-size: 1.25em;
     }
 
     span {
-      font-family: ${fonts.title};
-      color: ${color.foregroundAlt};
+      color: ${color.background};
     }
   }
 

@@ -21,13 +21,8 @@ export default function Toppings() {
       <SubPageHero
         backgroundImage="/assets/images/toppings.jpeg"
         heading="Toppings"
-        subHeading="We've got a lot!"
-      />
-      <TextCallout
-        heading="Toppings"
+        subHeading="We have a lot!"
         text="Koala Berry is proud to offer a mind blowing selection of Frozen Yogurt, Ice Cream, Fresh Fruit and Candy toppings including many old fashioned Ice Cream parlor syrups.  The flavor combinations are endless."
-        link="Learn More"
-        href=""
       />
       <FruitsList />
       <DryToppingsList />

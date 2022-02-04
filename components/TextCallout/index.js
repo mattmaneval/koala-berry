@@ -1,6 +1,13 @@
 import styled from 'styled-components';
-import media from '../../styles/media';
+
+// Components
 import PrimaryCta from '../navigation/PrimaryCta';
+
+// Styles
+import media from '../../styles/media';
+import theme from '../../styles/theme';
+
+const { color, fonts } = theme;
 
 const TextCalloutStyle = styled.section`
   background-image: url('/assets/images/sparkles-white.png');
@@ -11,7 +18,6 @@ const TextCalloutStyle = styled.section`
   p {
     display: inline-block;
     max-width: 22em;
-    color: black;
 
     @media ${media.secondary} {
       max-width: 100%;
@@ -33,13 +39,18 @@ const HeadingGroup = styled.div`
 
   h3 {
     max-width: 15em;
+    color: ${({ light }) => (light ? color.background : color.foreground)};
+  }
+
+  p {
+    color: ${({ light }) => (light ? color.background : color.foreground)};
   }
 `;
 
-const TextCallout = ({ heading, text, link, href}) => (
+const TextCallout = ({ heading, text, link, href, light}) => (
   <TextCalloutStyle>
     <div className="wrap">
-      <HeadingGroup>
+      <HeadingGroup light={light}>
         <div className="mark" />
         <h3>{heading}</h3>
         <p>{text}</p>

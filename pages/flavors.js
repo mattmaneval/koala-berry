@@ -6,7 +6,6 @@ import SubPageHero from '../components/SubPageHero/index';
 import FlavorsList from '../components/FlavorsList';
 import LocationCallout from '../components/LocationCallout/index';
 import Map from '../components/Map/index';
-import TextCallout from '../components/TextCallout/index';
 import theme from '../styles/theme';
 import Footer from '../components/Footer';
 
@@ -30,20 +29,10 @@ export default function Flavors() {
       <Header absolute />
       <SubPageHero
         backgroundImage="/assets/images/flavors.jpeg"
-        heading="Flavors"
-        subHeading="Self serve mean self inspired."
+        heading="flavors"
+        subHeading="Self-serve means self-inspired"
+        text="Koala Berry is self serve so you always get just what you desire.  Come on in, grab a cup and add the yogurt or ice cream of your choice… we have 18 flavors everyday… add your favorite toppings, over 50, including many fresh fruits and healthy choices... top it off with a nice selection of syrups too."
       />
-      <TextCallout
-        heading="Yogurt, Ice Cream & Sorbets"
-        text="A little or a lot… smothered in sauce or just a dib… prefer fresh fruit or is the sweet tooth calling…"
-        link="Learn More"
-        href=""
-      />
-      <FlavorsText>
-        <div className="mini-wrap">
-          <p>Koala Berry is self serve so you always get just what you desire.  Come on in, grab a cup and add the yogurt or ice cream of your choice… we have 18 flavors everyday… add your favorite toppings, over 50, including many fresh fruits and healthy choices... top it off with a nice selection of syrups too.</p>
-        </div>
-      </FlavorsText>
       <FlavorsList />
       <LocationCallout />
       <Map />
