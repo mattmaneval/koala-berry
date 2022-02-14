@@ -25,6 +25,7 @@ const FooterStyles = styled.footer`
 
     @media ${media.secondary} {
       flex-direction: column;
+      margin-bottom: 2em;
     }
   }
 
