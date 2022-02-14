@@ -15,7 +15,24 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Koala Berry</title>
+        <!-- Primary Meta Tags -->
+        <title>Premium Frozen Yogurt & Ice Cream</title>
+        <meta name="title" content="Premium Frozen Yogurt & Ice Cream">
+        <meta name="description" content="">
+
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://koala-berry.netlify.app/">
+        <meta property="og:title" content="Premium Frozen Yogurt & Ice Cream">
+        <meta property="og:description" content="/meta-tag-image.png">
+        <meta property="og:image" content="/meta-tag-image.png">
+
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image">
+        <meta property="twitter:url" content="https://koala-berry.netlify.app/">
+        <meta property="twitter:title" content="Premium Frozen Yogurt & Ice Cream">
+        <meta property="twitter:description" content="/meta-tag-image.png">
+        <meta property="twitter:image" content="/meta-tag-image.png">
       </Head>
       <GlobalStyle />
       <Header />
