@@ -2,7 +2,7 @@ import { css } from 'styled-components';
 import media from './media';
 import theme from './theme';
 
-const { color, responsive } = theme;
+const { color, responsive, grid } = theme;
 
 const mixins = {
   // Wrap
@@ -51,9 +51,11 @@ const mixins = {
   grid: css`
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-gap: ${grid.gap};
 
     @media ${media.secondary} {
       grid-template-columns: repeat(1, 1fr);
+      grid-gap: ${grid.gapMobile};
     }
   `,
 

@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 
+// Components
+
 // Styles
 import media from '../../styles/media';
 import mixins from '../../styles/mixins';
@@ -10,40 +12,16 @@ import sylvaniaStorefront from '../../assets/images/koala-berry-locations-sylvan
 
 const { border, color, font } = theme;
 
-const LocationCalloutStyle = styled.section`
-  background: linear-gradient(45deg, ${color.callout}, ${color.foregroundAlt});
-  background-size: 400% 400%;
-  animation: gradientbanner 7s ease infinite;
-
-  .location-callout-heading {
-    display: inline-block;
-    font-family: ${font.bold};
-    font-size: 2.45em;
-    margin-bottom: 0.5em;
-  }
-`;
+const LocationCalloutStyle = styled.section``;
 
 const LocationCalloutGrid = styled.div`
-  ${mixins.wrap}
   ${mixins.grid}
-  background-color: ${color.backgroundTert};
-  border-radius: ${border.radius};
-  overflow: hidden;
+  align-items: center;
 `;
 
 const LocationCalloutGridContent = styled.div`
-  padding: 6em;
-
-  @media ${media.primary} {
-    padding: 3em;
-  }
-
-  @media ${media.secondary} {
-    padding: 2.65em;
-  }
-
-  @media ${media.smallPhone} {
-    padding: 2em;
+  p {
+    max-width: 80%;
   }
 `;
 
@@ -55,15 +33,12 @@ const GridImage = styled.div`
   background-repeat: no-repeat;
 
   @media ${media.secondary} {
-    padding: 6em 0;
+    padding-top: 70%;
   }
 `;
 
 const LocationAddress = styled.a`
   display: inline-block;
-  font-family: ${font.font};
-  font-size: 0.9em;
-  margin-bottom: 0.85em;
   text-decoration: underline;
 
   div {
@@ -72,23 +47,58 @@ const LocationAddress = styled.a`
   }
 `;
 
+const LocationMetaGrid = styled.div`
+  ${mixins.grid}
+  background-color: ${color.backgroundTert};
+  border-radius: ${border.radius};
+  overflow: hidden;
+
+  .grid-container {
+    padding: 3em;
+
+    @media ${media.bigPhone} {
+      padding: 2em;
+    }
+  }
+`;
+
+const LocationMetaContainer = styled.div`
+  font-family: ${font.font};
+  margin-bottom: 1.25em;
+`;
+
 const LocationCallout = () => (
   <LocationCalloutStyle>
     <div className="wrap">
       <LocationCalloutGrid>
         <LocationCalloutGridContent>
-          <div className="location-callout-heading">location</div>
+          <div className="title">Location</div>
+          <h3>Regency Plaza</h3>
           <p>
             Koala Berry is located in Regency Plaza at Central and McCord in
             Sylvania Township.
           </p>
-          <LocationAddress>
-            <div>6710 Central Ave</div>
-            <div>Toledo, OH</div>
-          </LocationAddress>
-          <div>Open everyday Noon to 10pm</div>
         </LocationCalloutGridContent>
-        <GridImage />
+        <LocationMetaGrid>
+          <GridImage />
+          <div className="grid-container">
+            <div className="title">Visit</div>
+            <LocationMetaContainer>
+              <LocationAddress>
+                <div>6710 Central Ave</div>
+                <div>Toledo, OH</div>
+              </LocationAddress>
+            </LocationMetaContainer>
+            <div className="title">Hours</div>
+            <LocationMetaContainer>
+              <div>Open everyday Noon to 10pm</div>
+            </LocationMetaContainer>
+            <div className="title">Contact</div>
+            <LocationMetaContainer>
+              <div>(419) 725-5558</div>
+            </LocationMetaContainer>
+          </div>
+        </LocationMetaGrid>
       </LocationCalloutGrid>
     </div>
   </LocationCalloutStyle>

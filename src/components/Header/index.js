@@ -54,6 +54,7 @@ const StyledLink = styled(Link)`
   ${mixins.animate}
   display: inline-block;
   font-family: ${font.bold};
+  font-size: 1.2em;
   line-height: 0;
   padding: 1em;
   border-bottom: 4.5px solid transparent;

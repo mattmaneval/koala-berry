@@ -5,7 +5,12 @@ const theme = {
   },
 
   border: {
-    radius: '1.25em',
+    radius: '2.25em',
+  },
+
+  grid: {
+    gap: '2em',
+    gapMobile: '1em',
   },
 
   // Responsive

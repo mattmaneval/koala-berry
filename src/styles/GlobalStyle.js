@@ -85,7 +85,6 @@ const GlobalStyle = createGlobalStyle`
     margin-bottom: 0.35em;
     font-size: 2.85em;
     font-family: ${font.bold};
-    text-transform: lowercase;
 
     @media ${media.secondary} {
       font-size: 2.3em;
@@ -190,14 +189,11 @@ const GlobalStyle = createGlobalStyle`
   }
 
   .title {
-    font-family: ${font.fontBold};
-    font-size: 2.65rem;
-    line-height: 1.15;
-    margin-bottom: 0.2em;
-
-    @media ${media.secondary} {
-      font-size: 2rem;
-    }
+    font-family: ${font.bold};
+    font-size: 0.85em;
+    line-height: 1;
+    margin-bottom: 0.45em;
+    text-transform: uppercase;
 
     &.alt {
       color: transparent;

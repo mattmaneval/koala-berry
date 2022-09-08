@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 // Components
+import Cta from '../Cta/index';
 
 // Images
 import YogurtGroup from '../../assets/images/koala-berry-yogurt-group.png';
@@ -76,7 +77,12 @@ const Hero = () => (
       <HeroImage />
       <h1>Frozen Yogurt</h1>
       <H1Alt>Premium Frozen Yogurt & Ice Cream</H1Alt>
-      {/* <PrimaryCta ctaText="View Our Yogurt" ctaHref="/flavors" /> */}
+      <Cta
+        text="View Our Yogurt"
+        title="View our yogurt flavors."
+        filled
+        href="/flavors"
+      />
     </div>
   </HeroStyle>
 );
