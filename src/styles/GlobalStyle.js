@@ -82,10 +82,10 @@ const GlobalStyle = createGlobalStyle`
   }
 
   h3 {
-    color: ${color.foreground};
     margin-bottom: 0.35em;
     font-size: 2.85em;
-    font-family: ${font.fontBold};
+    font-family: ${font.bold};
+    text-transform: lowercase;
 
     @media ${media.secondary} {
       font-size: 2.3em;
@@ -130,10 +130,6 @@ const GlobalStyle = createGlobalStyle`
     font-size: 1.15em;
     margin-bottom: 1em;
 
-    &:last-of-type {
-      // margin-bottom: 0;
-    }
-
     @media ${media.primary} {
       margin-bottom: 0.5rem;
       font-size: 0.85rem;
@@ -160,10 +156,10 @@ const GlobalStyle = createGlobalStyle`
     color: ${color.foreground};
     text-decoration: none;
     cursor: pointer;
-    font-size: 1.25em;
+    font-size: 1em;
 
     &:hover {
-      color: ${color.backgroundTert};
+      color: ${color.callout};
     }
   }
 
@@ -250,13 +246,6 @@ const GlobalStyle = createGlobalStyle`
   .hide {
 		display: none;
 	}
-
-  .sparkle-background {
-    background-image: url('/assets/images/sparkles-white.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
 
   @keyframes gradientbanner {
     0% {

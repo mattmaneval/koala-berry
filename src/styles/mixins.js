@@ -47,6 +47,16 @@ const mixins = {
     }
   `,
 
+  // Grid
+  grid: css`
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    @media ${media.secondary} {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  `,
+
   // Flex
   flexCenter: css`
     display: flex;

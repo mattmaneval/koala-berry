@@ -4,6 +4,8 @@ import { Helmet } from 'react-helmet';
 // Components
 import Header from '../../components/Header/index';
 import Hero from '../../components/Hero/index';
+import YogurtCallout from '../../components/YogurtCallout/index';
+import LocationCallout from '../../components/LocationCallout';
 import Footer from '../../components/Footer/index';
 
 // Data
@@ -18,6 +20,8 @@ function Home() {
       </Helmet>
       <Header />
       <Hero />
+      <YogurtCallout />
+      <LocationCallout />
       <Footer />
     </>
   );
