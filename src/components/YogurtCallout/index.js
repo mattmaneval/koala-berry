@@ -41,6 +41,10 @@ const HeadingGroup = styled.div`
   align-items: center;
   text-align: center;
 
+  @media ${media.secondary} {
+    padding: 0 1em;
+  }
+
   h3 {
     max-width: 15em;
   }

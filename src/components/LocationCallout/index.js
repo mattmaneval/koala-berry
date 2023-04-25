@@ -47,6 +47,16 @@ const LocationAddress = styled.a`
   }
 `;
 
+const LocationPhoneNumber = styled.a`
+  display: inline-block;
+  text-decoration: underline;
+
+  div {
+    display: block;
+    margin-bottom: 0.5em;
+  }
+`;
+
 const LocationMetaGrid = styled.div`
   ${mixins.grid}
   background-color: ${color.backgroundTert};
@@ -95,7 +105,7 @@ const LocationCallout = () => (
             </LocationMetaContainer>
             <div className="title">Contact</div>
             <LocationMetaContainer>
-              <div>(419) 725-5558</div>
+              <LocationPhoneNumber>(419) 725-5558</LocationPhoneNumber>
             </LocationMetaContainer>
           </div>
         </LocationMetaGrid>
