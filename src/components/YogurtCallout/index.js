@@ -13,6 +13,8 @@ import theme from '../../styles/theme';
 const { color, border } = theme;
 
 const TextCalloutStyle = styled.section`
+  padding-top: 0;
+
   .wrap {
     background-color: ${color.backgroundTert};
     border-radius: ${border.radius};

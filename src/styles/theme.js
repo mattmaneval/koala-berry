@@ -6,6 +6,7 @@ const theme = {
 
   border: {
     radius: '2.25em',
+    color: '#f5f5f5',
   },
 
   grid: {

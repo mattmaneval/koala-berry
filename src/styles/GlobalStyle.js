@@ -93,18 +93,13 @@ const GlobalStyle = createGlobalStyle`
   }
 
   h4 {
-    color: ${color.background};
-    font-size: 2em;
-    font-family: ${font.title};
-    margin-bottom: 1em;
-    text-transform: uppercase;
+    margin-bottom: 0.35em;
+    font-size: 2.15em;
+    font-family: ${font.bold};
 
     @media ${media.secondary} {
-      // font-size: 3=2em;
-    }
-
-    @media ${media.smallPhone} {
-      // font-size: 2.5em;
+      font-size: 2.3em;
+      margin-bottom: 0.85em;
     }
   }
 

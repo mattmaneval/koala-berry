@@ -104,11 +104,11 @@ const Footer = () => (
         <div>Open Everyday Noon to 10 pm</div>
       </div>
       <SocialsContainer>
-        <Icon type="facebook" href="https://www.facebook.com/PocoPiatti/" />
-        <Icon
+        <Icon type="facebook" href="https://www.facebook.com/koalaberry/" />
+        {/* <Icon
           type="instagram"
           href="https://www.instagram.com/pocopiatti_pb/?hl=en"
-        />
+        /> */}
       </SocialsContainer>
     </div>
     <Subfooter />

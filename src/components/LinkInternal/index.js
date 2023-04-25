@@ -7,9 +7,9 @@ import styled from 'styled-components';
 import mixins from '../../styles/mixins';
 import theme from '../../styles/theme';
 
-const { border, color } = theme;
+const { color, border } = theme;
 
-const StyledCta = styled((props) => <Link {...props} />)`
+const StyledLinkInternal = styled((props) => <Link {...props} />)`
   ${mixins.animate}
 	${mixins.cta}
   border-radius: ${border.radius};
@@ -23,23 +23,30 @@ const StyledCta = styled((props) => <Link {...props} />)`
 
   &:hover {
     color: ${({ filled }) =>
-      filled ? `${color.foreground}` : `${color.foreground}`};
+      filled ? `${color.background}` : `${color.background}`};
     background-color: ${({ filled }) =>
-      filled ? `${color.foregroundTert}` : `${color.callout}`};
-    border: 2px solid ${color.foregroundTert};
+      filled ? `${color.callout}` : `${color.callout}`};
+    border: 2px solid ${color.callout};
 `;
 
-const Cta = ({ text, href, title, filled }) => (
-  <StyledCta className="cta" to={href} title={title} filled={filled}>
+const LinkInternal = ({ text, dark, href, title, filled }) => (
+  <StyledLinkInternal
+    className="cta"
+    to={href}
+    title={title}
+    dark={dark}
+    filled={filled}
+  >
     {text}
-  </StyledCta>
+  </StyledLinkInternal>
 );
 
-Cta.propTypes = {
+LinkInternal.propTypes = {
   text: PropTypes.string.isRequired,
+  dark: PropTypes.bool,
   title: PropTypes.string.isRequired,
   href: PropTypes.string.isRequired,
   filled: PropTypes.bool,
 };
 
-export default Cta;
+export default LinkInternal;
