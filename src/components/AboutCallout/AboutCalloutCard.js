@@ -59,7 +59,7 @@ function AboutCallout({ heading, copy, image }) {
         <p>{copy}</p>
         <LinkInternal
           text="Learn More"
-          href="/private-events"
+          href="/about"
           title="Learn more about private events at Poco Piatti."
         />
       </AboutCalloutContent>

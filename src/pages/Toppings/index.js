@@ -4,6 +4,10 @@ import { Helmet } from 'react-helmet';
 // Components
 import Header from '../../components/Header/index';
 import SubPageHero from '../../components/SubPageHero';
+import DryToppingsList from '../../components/DryToppingsList';
+import FruitList from '../../components/FruitList';
+import SyrupList from '../../components/SyrupList';
+import AboutCallout from '../../components/AboutCallout/index';
 import LocationCallout from '../../components/LocationCallout';
 import Footer from '../../components/Footer/index';
 
@@ -19,11 +23,14 @@ function Toppings() {
       </Helmet>
       <Header dark />
       <SubPageHero
-        title="About"
-        h1Text="Self serve means self inspired"
-        copy="Koala Berry's goal is to provide our customers with the opportunity to create their own delicious and wholesome confection in a portion sized perfectly for them.  Our self serve concept caters to the creativity, taste preferences and nutritional desires of every customer.  Our atmosphere is inviting and impeccably clean, encouraging patrons to visit often and enjoy their unique, self-inspired dessert."
+        title="Toppings"
+        h1Text="We've got a lot!"
+        copy="Koala Berry is proud to offer a mind blowing selection of Frozen Yogurt, Ice Cream, Fresh Fruit and Candy toppings including many old fashioned Ice Cream parlor syrups.  The flavor combinations are endless."
       />
-
+      <DryToppingsList />
+      <FruitList />
+      <SyrupList />
+      <AboutCallout />
       <LocationCallout />
       <Footer />
     </>
