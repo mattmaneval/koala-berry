@@ -2,7 +2,7 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 
 // Components
-// import Header from '../../components/Header/index';
+import Header from '../../components/Header/index';
 import Footer from '../../components/Footer/index';
 
 // Data
@@ -15,7 +15,7 @@ function Flavors() {
         <title>Flavors | Koala Berry</title>
         <meta name="description" content="Premium Frozen Yogurt & Ice Cream." />
       </Helmet>
-      {/* <Header/> */}
+      <Header />
       <div>Koala Berry</div>
       <Footer />
     </>

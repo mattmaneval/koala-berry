@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 // Components
@@ -30,7 +31,8 @@ const HeaderStyle = styled.header`
   }
 
   svg {
-    fill: ${color.background};
+    fill: ${({ dark }) =>
+      dark ? `${color.foregroundAlt}` : `${color.background}`};
     padding: 1em 0;
     width: 7em;
 
@@ -40,7 +42,8 @@ const HeaderStyle = styled.header`
   }
 
   a {
-    color: ${color.background};
+    color: ${({ dark }) =>
+      dark ? `${color.foregroundAlt}` : `${color.background}`};
   }
 `;
 
@@ -67,13 +70,13 @@ const StyledLink = styled(Link)`
   }
 `;
 
-function Header() {
+function Header({ dark }) {
   const [menu, active] = useState(false);
 
   const handleClick = () => (menu ? active(false) : active(true));
 
   return (
-    <HeaderStyle menu={menu}>
+    <HeaderStyle menu={menu} dark={dark}>
       <GlobalHeader />
       <div className="wrap">
         <Link to="/">
@@ -96,5 +99,9 @@ function Header() {
     </HeaderStyle>
   );
 }
+
+Header.propTypes = {
+  dark: PropTypes.bool,
+};
 
 export default Header;
