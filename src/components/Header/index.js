@@ -8,7 +8,7 @@ import GlobalHeader from '../GlobalHeader/index';
 import Logo from '../Logo/index';
 // import LinkInternal from '../LinkInternal/index';
 import MenuButton from '../MenuButton/index';
-// import MobileMenu from '../MobileMenu/index';
+import MobileMenu from '../MobileMenu/index';
 
 // Styles
 import mixins from '../../styles/mixins';
@@ -22,13 +22,6 @@ const HeaderStyle = styled.header`
   position: absolute;
   width: 100%;
   z-index: 1;
-  position: absolute;
-
-  .wrap {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
 
   svg {
     fill: ${({ dark }) =>
@@ -70,6 +63,14 @@ const StyledLink = styled(Link)`
   }
 `;
 
+const StyledHeaderWrap = styled.div`
+  ${mixins.wrap}
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+`;
+
 function Header({ dark }) {
   const [menu, active] = useState(false);
 
@@ -78,7 +79,7 @@ function Header({ dark }) {
   return (
     <HeaderStyle menu={menu} dark={dark}>
       <GlobalHeader />
-      <div className="wrap">
+      <StyledHeaderWrap>
         <Link to="/">
           <Logo />
         </Link>
@@ -94,8 +95,8 @@ function Header({ dark }) {
           ctaHref="tel:419-725-5558"
         /> */}
         <MenuButton menu={menu} onClick={handleClick} />
-      </div>
-      {/* <MobileMenu menu={menu} /> */}
+      </StyledHeaderWrap>
+      <MobileMenu menu={menu} />
     </HeaderStyle>
   );
 }

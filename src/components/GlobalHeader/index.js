@@ -14,6 +14,8 @@ const GlobalHeaderStyle = styled.div`
   line-height: 0;
   margin-bottom: 1em;
   font-size: 0.85em;
+  position: relative;
+  z-index: 10;
 `;
 
 const GlobalHeader = () => (
