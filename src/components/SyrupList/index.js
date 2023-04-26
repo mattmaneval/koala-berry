@@ -5,7 +5,7 @@ import { syrupData } from '../../data/syrup-local';
 const SyrupList = () => (
   <section className="align-center sparkle-background">
     <div className="wrap">{/* <SectionHeading text="Syrups" /> */}</div>
-    <div className="wrap list">
+    <div className="inner-wrap list">
       {Object.keys(syrupData).map((key) => (
         <MenuItem data={syrupData[key]} />
       ))}

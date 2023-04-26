@@ -3,7 +3,7 @@ import { dryToppingsData } from '../../data/dry-toppings-local';
 
 const DryToppingsList = () => (
   <section className="align-center sparkle-background">
-    <div className="wrap list">
+    <div className="inner-wrap list">
       {Object.keys(dryToppingsData).map((key) => (
         <MenuItem data={dryToppingsData[key]} />
       ))}

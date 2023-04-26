@@ -223,6 +223,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   .list {
+    text-align: left;
     column-count: 3;
 
     @media ${media.primary} {
