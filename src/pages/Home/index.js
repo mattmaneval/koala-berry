@@ -23,11 +23,13 @@ function Home() {
       </Helmet>
       <Header />
       <Hero />
-      <AboutCallout />
+      <LocationCallout />
       <YogurtCallout />
+      <AboutCallout />
+
       <ImageSlider imageData={GenericImagesData} />
       {/* <GilfCardCallout /> */}
-      <LocationCallout />
+
       <Footer />
     </>
   );

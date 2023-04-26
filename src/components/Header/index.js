@@ -6,7 +6,6 @@ import styled from 'styled-components';
 // Components
 import GlobalHeader from '../GlobalHeader/index';
 import Logo from '../Logo/index';
-// import LinkInternal from '../LinkInternal/index';
 import MenuButton from '../MenuButton/index';
 import MobileMenu from '../MobileMenu/index';
 
@@ -89,11 +88,6 @@ function Header({ dark }) {
           <StyledLink to="/benefits">Benefits</StyledLink>
           <StyledLink to="/about">About</StyledLink>
         </NavContainer>
-        {/* <PrimaryCta
-          hideOnMobile
-          ctaText="contact"
-          ctaHref="tel:419-725-5558"
-        /> */}
         <MenuButton menu={menu} onClick={handleClick} />
       </StyledHeaderWrap>
       <MobileMenu menu={menu} />

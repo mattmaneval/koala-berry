@@ -92,7 +92,7 @@ function ImageSlider({ imageData }) {
   });
 
   return (
-    <ImageSliderContainer>
+    <ImageSliderContainer className="no-padding-top">
       <div className="wrap">
         <ImageSliderWrap ref={sliderRef} loop className="keen-slider">
           {Object.keys(imageData).map((key) => (

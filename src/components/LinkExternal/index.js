@@ -9,27 +9,27 @@ import theme from '../../styles/theme';
 const { color, border } = theme;
 
 const StyledLinkExternal = styled.a`
-  ${mixins.animate}
+   ${mixins.animate}
 	${mixins.cta}
-  color: ${({ dark }) =>
-    dark ? `${color.background}` : `${color.foreground}`};
+  border-radius: ${border.radius};
+  color: ${({ filled }) =>
+    filled ? `${color.background}` : `${color.foreground}`};
   background-color: ${({ filled }) => (filled ? `${color.callout}` : `none`)};
   border: ${({ filled }) =>
-    filled ? `2px solid ${color.callout}` : `2px solid ${color.callout}`};
-    padding: 0.7em;
-    border-radius: ${border.radius};
+    filled ? `2px solid ${color.callout}` : `2px solid ${color.foreground}`};
+  display: inline-block;
+  padding: 0.75em 1.5em 0.6em 1.5em;
 
   &:hover {
     color: ${({ filled }) =>
       filled ? `${color.foreground}` : `${color.foreground}`};
     background-color: ${({ filled }) =>
-      filled ? `${color.backgroundAlt}` : `${color.callout}`};
-    border: 2px solid ${color.backgroundAlt};
+      filled ? `${color.foregroundTert}` : `${color.callout}`};
+    border: 2px solid ${color.foregroundTert};
 `;
 
 const LinkExternal = ({ text, dark, href, title, filled, target }) => (
   <StyledLinkExternal
-    className="cta"
     href={href}
     title={title}
     dark={dark}

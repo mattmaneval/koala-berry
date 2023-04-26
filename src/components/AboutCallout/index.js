@@ -10,7 +10,9 @@ import theme from '../../styles/theme';
 
 const { grid } = theme;
 
-const AboutCalloutGridSection = styled.section``;
+const AboutCalloutGridSection = styled.section`
+  padding-top: 0;
+`;
 
 const AboutCalloutGridContainer = styled.div`
   display: grid;

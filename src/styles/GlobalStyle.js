@@ -51,7 +51,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   h1 {
-    color: ${color.foregroundAlt};
+    color: ${color.background};
     display: inline-block;
     font-family: ${font.title};
     font-size: min(13vw,7em);
@@ -223,6 +223,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   .list {
+    text-align: left;
     column-count: 3;
 
     @media ${media.primary} {

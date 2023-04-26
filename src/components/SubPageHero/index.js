@@ -6,30 +6,20 @@ import styled from 'styled-components';
 
 // Styles
 import mixins from '../../styles/mixins';
+import media from '../../styles/media';
 import theme from '../../styles/theme';
+
+// Images
+import PinkSpoon from '../../assets/images/pink-spoon.webp';
 
 const { color } = theme;
 
-const SubPageHeroImage = styled.div`
-  // background-image: ${(props) => `url(${props.imageUrl})`};
-  // background-position: center;
-  // background-repeat: no-repeat;
-  // background-size: cover;
-  background-color: ${color.foregroundAlt};
-  // filter: brightness(0.65);
-  // height: 100%;
-  // width: 100%;
-  // position: absolute;
-  // top: 0;
-  // right: 0;
-`;
-
 const SubPageHeroStyle = styled.div`
+  background-color: ${color.foregroundAlt};
   position: relative;
   padding: 14em 0 3em 0;
 
   .inner-wrap {
-    z-index: 1;
     text-align: center;
   }
 `;
@@ -49,12 +39,27 @@ const SubpageHeroCopy = styled.div`
   }
 `;
 
+const HeroImage = styled.div`
+  background-image: url('${PinkSpoon}');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 0;
+  // margin-bottom: -7em;
+  padding-top: 10%;
+  width: 100%;
+
+  @media ${media.secondary} {
+    padding-top: 15%;
+  }
+`;
+
 const SubPageHero = ({ h1Text, imageUrl, light, title, copy }) => (
   <>
     <SubPageHeroStyle light={light}>
-      <SubPageHeroImage imageUrl={imageUrl} />
       <div className="inner-wrap">
         <h1>{h1Text}</h1>
+        <HeroImage />
       </div>
     </SubPageHeroStyle>
     {copy ? (
