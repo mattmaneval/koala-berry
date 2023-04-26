@@ -250,6 +250,10 @@ const GlobalStyle = createGlobalStyle`
         background-position: 0% 50%;
     }
   }
+
+  .keen-slider {
+		overflow: visible !important;
+	}
 `;
 
 export default GlobalStyle;

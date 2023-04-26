@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import Cta from '../Cta/index';
 
 // Images
-import YogurtGroup from '../../assets/images/koala-berry-yogurt-group.png';
+import YogurtGroup from '../../assets/images/koala-berry-yogurt-group.webp';
 
 // Styles
 import media from '../../styles/media';

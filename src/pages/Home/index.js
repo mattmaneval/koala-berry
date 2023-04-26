@@ -5,13 +5,14 @@ import { Helmet } from 'react-helmet';
 import Header from '../../components/Header/index';
 import Hero from '../../components/Hero/index';
 import AboutCallout from '../../components/AboutCallout';
+import ImageSlider from '../../components/ImageSlider';
 import YogurtCallout from '../../components/YogurtCallout/index';
 // import GilfCardCallout from '../../components/GiftCardCallout';
 import LocationCallout from '../../components/LocationCallout';
 import Footer from '../../components/Footer/index';
 
 // Data
-// import FoodImagesData from '../../data/images/food-images';
+import GenericImagesData from '../../data/images/generic-images';
 
 function Home() {
   return (
@@ -24,6 +25,7 @@ function Home() {
       <Hero />
       <AboutCallout />
       <YogurtCallout />
+      <ImageSlider imageData={GenericImagesData} />
       {/* <GilfCardCallout /> */}
       <LocationCallout />
       <Footer />
