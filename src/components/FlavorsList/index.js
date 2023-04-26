@@ -8,7 +8,7 @@ import LinkExternal from '../LinkExternal/index';
 import { flavorsData } from '../../data/flavors-local';
 
 // Styles
-import media from '../../styles/media';
+// import media from '../../styles/media';
 import theme from '../../styles/theme';
 
 const { color, border } = theme;

@@ -54,7 +54,7 @@ const HeroImage = styled.div`
   }
 `;
 
-const SubPageHero = ({ h1Text, imageUrl, light, title, copy }) => (
+const SubPageHero = ({ h1Text, light, title, copy }) => (
   <>
     <SubPageHeroStyle light={light}>
       <div className="inner-wrap">
@@ -73,7 +73,7 @@ const SubPageHero = ({ h1Text, imageUrl, light, title, copy }) => (
 
 SubPageHero.propTypes = {
   h1Text: PropTypes.string.isRequired,
-  imageUrl: PropTypes.string.isRequired,
+  // imageUrl: PropTypes.string.isRequired,
   light: PropTypes.bool,
   title: PropTypes.string,
   copy: PropTypes.string,
