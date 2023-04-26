@@ -11,17 +11,16 @@ import theme from '../../styles/theme';
 const { color } = theme;
 
 const SubPageHeroImage = styled.div`
-  // background-image: ${(props) => `url(${props.imageUrl})`};
-  // background-position: center;
-  // background-repeat: no-repeat;
-  // background-size: cover;
+  background-image: ${(props) => `url(${props.imageUrl})`};
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   background-color: ${color.foregroundAlt};
-  // filter: brightness(0.65);
-  // height: 100%;
-  // width: 100%;
-  // position: absolute;
-  // top: 0;
-  // right: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
 `;
 
 const SubPageHeroStyle = styled.div`
@@ -29,7 +28,6 @@ const SubPageHeroStyle = styled.div`
   padding: 14em 0 3em 0;
 
   .inner-wrap {
-    z-index: 1;
     text-align: center;
   }
 `;

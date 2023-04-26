@@ -33,10 +33,6 @@ const HeroStyle = styled.section`
     flex-direction: column;
     align-items: center;
   }
-
-  h1 {
-    color: ${color.background};
-  }
 `;
 
 const HeroImage = styled.div`

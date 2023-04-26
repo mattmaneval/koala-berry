@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 // Components
-// import PrimaryCta from '../navigation/PrimaryCta';
+import Cta from '../Cta';
 
 // Images
 import chocolateBowl from '../../assets/images/koala-berry-chocolate-yogurt-bowl.png';
@@ -9,6 +9,7 @@ import chocolateBowl from '../../assets/images/koala-berry-chocolate-yogurt-bowl
 // Styles
 import media from '../../styles/media';
 import theme from '../../styles/theme';
+// import LinkInternal from '../LinkInternal';
 
 const { color, border } = theme;
 
@@ -70,10 +71,13 @@ const TextCallout = () => (
           Grab a cup, pick a flavor or two, add toppings, weight & checkout.
           Enjoy!
         </p>
-        {/* <PrimaryCta
-          ctaText={link}
-          ctaHref={href}
-        /> */}
+
+        <Cta
+          text="View Our Flavors"
+          href="/flavors"
+          title="View Koala Berry yogurt flavors."
+          filled
+        />
       </HeadingGroup>
       <CalloutImage />
     </div>

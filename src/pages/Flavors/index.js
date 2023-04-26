@@ -16,7 +16,7 @@ function Flavors() {
         <title>Flavors | Koala Berry</title>
         <meta name="description" content="Premium Frozen Yogurt & Ice Cream." />
       </Helmet>
-      <Header dark />
+      <Header />
       <SubPageHero
         title="Flavors"
         h1Text="A little or a lot... "

@@ -18,7 +18,7 @@ function Benefits() {
         <title>Benefits | Koala Berry</title>
         <meta name="description" content="Premium Frozen Yogurt & Ice Cream." />
       </Helmet>
-      <Header dark />
+      <Header />
       <SubPageHero
         title="Benefits"
         h1Text="Delicious taste... Healthy Lifestyle"

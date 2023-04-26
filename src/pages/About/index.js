@@ -18,7 +18,7 @@ function About() {
         <title>About | Koala Berry</title>
         <meta name="description" content="Premium Frozen Yogurt & Ice Cream." />
       </Helmet>
-      <Header dark />
+      <Header />
       <SubPageHero
         title="About"
         h1Text="Self serve means self inspired"

@@ -16,6 +16,7 @@ const { border } = theme;
 
 const AboutCalloutContainer = styled.div`
   border: 1px solid ${border.color};
+  border-radius: ${border.radius};
   display: grid;
   grid-template-rows: repeat(2, 1fr);
   min-height: 34em;
