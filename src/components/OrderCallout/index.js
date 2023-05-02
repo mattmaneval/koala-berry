@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 // Components
-import Cta from '../Cta';
+import LinkExternal from '../LinkExternal';
 
 // Images
 import chocolateBowl from '../../assets/images/koala-berry-chocolate-yogurt-bowl.png';
@@ -12,7 +12,7 @@ import theme from '../../styles/theme';
 
 const { color, border } = theme;
 
-const YogurtCalloutStyle = styled.section`
+const OrderCalloutStyle = styled.section`
   padding-top: 0;
 
   .wrap {
@@ -61,25 +61,25 @@ const CalloutImage = styled.div`
   height: 22em;
 `;
 
-const YogurtCallout = () => (
-  <YogurtCalloutStyle>
+const OrderCallout = () => (
+  <OrderCalloutStyle>
     <div className="wrap">
       <HeadingGroup>
-        <h3>Your very own unique, self-inspired dessert.</h3>
+        <h3>Rotating Yogurt & Ice Cream Flavors</h3>
         <p>
-          Grab a cup, pick a flavor or two, add toppings, weigh & checkout.
-          Enjoy!
+          A little or a lot… smothered in sauce or just a dib… prefer fresh
+          fruit or is the sweet tooth calling…
         </p>
-        <Cta
-          text="View Our Flavors"
-          href="/flavors"
-          title="View Koala Berry yogurt flavors."
+        <LinkExternal
+          text="Call to order"
+          href="tel:419-725-5558"
+          title="Call to order Koala Berry."
           filled
         />
       </HeadingGroup>
       <CalloutImage />
     </div>
-  </YogurtCalloutStyle>
+  </OrderCalloutStyle>
 );
 
-export default YogurtCallout;
+export default OrderCallout;
