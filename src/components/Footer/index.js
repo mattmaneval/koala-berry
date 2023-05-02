@@ -86,7 +86,9 @@ const SocialsContainer = styled.div`
 const Footer = () => (
   <FooterStyles>
     <div className="wrap">
-      <Logo />
+      <Link to="/">
+        <Logo />
+      </Link>
       <MenuStyle>
         <MenuLinkStyle to="/flavors">flavors</MenuLinkStyle>
         <MenuLinkStyle to="/toppings">toppings</MenuLinkStyle>
