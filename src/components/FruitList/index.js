@@ -1,11 +1,10 @@
 import MenuItem from '../MenuItem';
 import { fruitData } from '../../data/fruit-local';
-// import SectionHeading from '../SectionHeading/index';
 
 const FruitList = () => (
-  <section className="align-center sparkle-background">
-    <div className="wrap">{/* <SectionHeading text="Fresh Fruit" /> */}</div>
+  <section className="no-padding-top">
     <div className="inner-wrap list">
+      <h3>Fresh Fruit</h3>
       {Object.keys(fruitData).map((key) => (
         <MenuItem data={fruitData[key]} />
       ))}
