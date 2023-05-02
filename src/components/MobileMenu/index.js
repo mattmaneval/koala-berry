@@ -76,12 +76,12 @@ const MobileMenu = ({ menu }) => (
         title="(419) 725-5558 to place an order."
         filled
       />
-      <LinkExternal
+      {/* <LinkExternal
         text="Email"
         href="mailto:info@koalaberry.com"
         title="(419) 725-5558 to place an order."
         filled
-      />
+      /> */}
     </div>
   </MobileMenuStyles>
 );
