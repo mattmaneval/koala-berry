@@ -70,15 +70,15 @@ const MobileMenu = ({ menu }) => (
         <StyledLink to="/benefits">Benefits</StyledLink>
         <StyledLink to="/about">About</StyledLink>
       </nav>
-      {/* <LinkInternal
-      text="Order"
-      title="Place an order at Koala Berry."
-      filled
-      href=""
-    /> */}
       <LinkExternal
-        text="Reservations"
+        text="Phone"
         href="tel:419-725-5558"
+        title="(419) 725-5558 to place an order."
+        filled
+      />
+      <LinkExternal
+        text="Email"
+        href="mailto:info@koalaberry.com"
         title="(419) 725-5558 to place an order."
         filled
       />

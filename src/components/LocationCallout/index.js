@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 // Components
+// import LinkExternal from '../LinkExternal/index';
 
 // Styles
 import media from '../../styles/media';
@@ -94,7 +95,11 @@ const LocationCallout = () => (
           <div className="grid-container">
             <div className="title">Visit</div>
             <LocationMetaContainer>
-              <LocationAddress>
+              <LocationAddress
+                href="https://goo.gl/maps/iBKDHmP3eiPa2nfv5"
+                target="_blank"
+                title="View Koala Berry on Google Maps."
+              >
                 <div>6710 Central Ave</div>
                 <div>Toledo, OH</div>
               </LocationAddress>
@@ -105,7 +110,12 @@ const LocationCallout = () => (
             </LocationMetaContainer>
             <div className="title">Contact</div>
             <LocationMetaContainer>
-              <LocationPhoneNumber>(419) 725-5558</LocationPhoneNumber>
+              <LocationPhoneNumber
+                href="tel:4197255558"
+                title="Call Koala Berry."
+              >
+                (419) 725-5558
+              </LocationPhoneNumber>
             </LocationMetaContainer>
           </div>
         </LocationMetaGrid>

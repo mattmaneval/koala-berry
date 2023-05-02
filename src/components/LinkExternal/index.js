@@ -18,6 +18,7 @@ const StyledLinkExternal = styled.a`
   border: ${({ filled }) =>
     filled ? `2px solid ${color.callout}` : `2px solid ${color.foreground}`};
   display: inline-block;
+  margin-bottom: 1em;
   padding: 0.75em 1.5em 0.6em 1.5em;
 
   &:hover {
