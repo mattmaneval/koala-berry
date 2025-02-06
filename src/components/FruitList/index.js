@@ -4,7 +4,7 @@ import { fruitData } from '../../data/fruit-local';
 const FruitList = () => (
   <section className="no-padding-top">
     <div className="inner-wrap list">
-      <h3>Fresh Fruit</h3>
+      <h3>Fresh Fruit & More</h3>
       {Object.keys(fruitData).map((key) => (
         <MenuItem data={fruitData[key]} />
       ))}

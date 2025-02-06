@@ -1,96 +1,24 @@
 export const dryToppingsData = [
   {
-    name: 'Chocolate Rocks',
-  },
-  {
-    name: 'Crushed Butterfinger',
-  },
-  {
-    name: 'Almonds',
-  },
-  {
-    name: 'Peanuts (Whole & Chopped)',
-  },
-  {
-    name: 'Cookie Dough',
-  },
-  {
-    name: 'Gummy Bears',
-  },
-  {
-    name: 'Brownie Bits',
-  },
-  {
-    name: 'Oreo Crumble',
-  },
-  {
-    name: 'Kit-Kat Pieces',
-  },
-  {
-    name: 'Kashi Go-Lean',
-  },
-  {
-    name: 'Rainbow Snow Tops',
-  },
-  {
-    name: 'Yogurt Chips',
-  },
-  {
-    name: 'Sugar Cone Crumbles',
-  },
-  {
-    name: 'Vanilla Wafers',
-  },
-  {
-    name: 'Pie Crust Chips',
-  },
-  {
-    name: 'Crushed Ginger Snaps',
-  },
-  {
-    name: 'Flaked Coconut',
-  },
-  {
-    name: 'Chocolate Covered Raisins',
-  },
-  {
-    name: 'Crushed Whoppers',
-  },
-  {
-    name: 'Animal Crackers',
-  },
-  {
-    name: "And's Mints",
-  },
-  {
-    name: 'Rainbow Sprinkles',
-  },
-  {
-    name: 'Chocolate Sprinkles',
-  },
-  {
-    name: 'M&M’s',
-  },
-  {
-    name: 'Marshmallows',
-  },
-  {
-    name: 'Reese’s Pieces',
-  },
-  {
-    name: "Reese's Peanut Butter Cup",
-  },
-  {
-    name: 'Heath Bar Pieces',
-  },
-  {
-    name: 'Semi-Sweet Chocolate Chips',
-  },
-  {
-    name: 'Snickers Bar Crumble',
-  },
-  {
     name: 'Fruity Pebbles',
+  },
+  {
+    name: 'Cinn Toast Crunch',
+  },
+  {
+    name: 'Captain Crunch',
+  },
+  {
+    name: 'Marshmallow',
+  },
+  {
+    name: 'Cotton Candy Fizz',
+  },
+  {
+    name: 'Gummy Worms',
+  },
+  {
+    name: 'Mini Gummy Bears',
   },
   {
     name: 'Nerds',
@@ -99,28 +27,70 @@ export const dryToppingsData = [
     name: 'Skittles',
   },
   {
-    name: 'Graham Cracker Crumbs',
+    name: 'Sugar Cone',
   },
   {
-    name: 'Strawberry Mochi',
+    name: 'Oreo',
   },
   {
-    name: 'Mango Mochi',
+    name: 'Chocolate Sprinkles',
   },
   {
-    name: 'Dutch Apple Crumbs',
+    name: 'Rainbow Sprinkles',
   },
   {
-    name: 'Pretzels',
+    name: 'Chocolate Rocks',
   },
   {
-    name: 'Chocolate Covered Pretzels',
+    name: 'Mini M&Ms',
   },
   {
-    name: 'Sour Patch Kids',
+    name: 'Granola',
   },
   {
-    name: 'Pie Crust Crumbs',
+    name: 'Andes Candies',
+  },
+  {
+    name: 'Snickers',
+  },
+  {
+    name: 'KitKat',
+  },
+  {
+    name: 'Reeses Pieces',
+  },
+  {
+    name: 'Heath',
+  },
+  {
+    name: 'Chips Ahoy',
+  },
+  {
+    name: 'Butter finger',
+  },
+  {
+    name: 'Granulated Peanuts',
+  },
+  {
+    name: 'Almonds',
+  },
+  {
+    name: 'Krunch Kote',
+  },
+  {
+    name: 'Mini Chocolate Chips',
+  },
+  {
+    name: 'Peanut Butter Chips',
+  },
+  {
+    name: 'Yogurt Chips',
+  },
+  {
+    name: 'Toasted Coconut',
+  },
+  {
+    name: 'Shredded Coconut',
   },
 ];
 

@@ -1,30 +1,51 @@
 export const fruitData = [
   {
-    name: 'Strawberries',
+    name: 'Pineapple',
   },
   {
-    name: 'Koalaberries (Blackberries)',
+    name: 'Blackberry',
   },
   {
-    name: 'Raspberries',
+    name: 'Strawberry Sauce',
   },
   {
     name: 'Mango',
   },
   {
-    name: 'Kiwi',
-  },
-  {
-    name: 'Pineapple',
-  },
-  {
     name: 'Blueberries',
   },
   {
-    name: 'Mandarin Oranges',
+    name: 'Maraschino Cherries',
   },
   {
-    name: 'Maraschino Cherries',
+    name: 'Kiwi',
+  },
+  {
+    name: 'Raspberries',
+  },
+  {
+    name: 'Strawberries',
+  },
+  {
+    name: 'Boba (flavors change. 3 Rotating flavors – cherry, strawberry, orange, mango, blueberry, green apple and kiwi)',
+  },
+  {
+    name: 'Caramel Turtles',
+  },
+  {
+    name: 'Brownie Bites',
+  },
+  {
+    name: 'Cheesecake Bites',
+  },
+  {
+    name: 'Reese Peanut Butter Cups',
+  },
+  {
+    name: 'Whipped Cream',
+  },
+  {
+    name: 'Cookie Dough',
   },
 ];
 

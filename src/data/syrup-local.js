@@ -1,42 +1,51 @@
 export const syrupData = [
   {
-    name: 'Premium Hot Fudge',
+    name: 'Belgium Cookie Crème',
   },
   {
-    name: 'Premium Hot Caramel',
+    name: 'Crème De Menth',
   },
   {
-    name: 'Premium Peanut Butter',
+    name: 'Marshmallow Sauce',
   },
   {
-    name: 'Chocolate',
+    name: 'Nutella',
   },
   {
-    name: 'Wild Cherry',
-  },
-  {
-    name: 'Raspberry',
-  },
-  {
-    name: 'Strawberry',
-  },
-  {
-    name: 'Coconut Honey',
+    name: 'Natures Honey',
   },
   {
     name: 'Butterscotch',
   },
   {
-    name: 'Cream de Menthe',
+    name: 'Coffee Syrup',
   },
   {
-    name: 'Clover Honey',
+    name: 'White Chocolate',
   },
   {
-    name: 'Nutella Chocolate Hazelnut Cream',
+    name: 'Raspberry Sauce',
   },
   {
-    name: 'Belgian Cookie Cream',
+    name: 'Wild Cherry Sauce',
+  },
+  {
+    name: 'Hot Fudge',
+  },
+  {
+    name: 'Hot Caramel',
+  },
+  {
+    name: 'Chocolate syrup',
+  },
+  {
+    name: 'Peanut butter syrup',
+  },
+  {
+    name: 'Strawberry syrup',
+  },
+  {
+    name: 'Raspberry syrup',
   },
 ];
 
