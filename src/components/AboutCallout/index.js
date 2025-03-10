@@ -34,12 +34,12 @@ function AboutCalloutGrid() {
           <AboutCalloutGridCard
             heading="About Our Yogurt"
             copy="The benefits of yogurt have been talked about for years. Ours starts with real dairy, fresh milk, real fruit purees, natural flavors and lots of beneficial live yogurt cultures called probiotics."
-            image="https://koalaberry.s3.us-east-2.amazonaws.com/koala-berry-yogurt-bowl-waffle-bowl.webp"
+            image="https://koalaberry.s3.us-east-2.amazonaws.com/koala-berry-image-12.webp"
           />
           <AboutCalloutGridCard
             heading="Endless Toppings"
             copy="Super fresh fruit, premium fountain syrups and oodles of healthy and sweet toppings make Koala Berry a special treat for all. Mix and match over 50 toppings and 18 frozen yogurt or ice cream flavors. You have almost limitless combinations to enjoy."
-            image="https://koalaberry.s3.us-east-2.amazonaws.com/koala-berry-endless-toppings.webp"
+            image="https://koalaberry.s3.us-east-2.amazonaws.com/koala-berry-image-10.webp"
           />
         </AboutCalloutGridContainer>
       </div>

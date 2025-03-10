@@ -1,7 +1,7 @@
 const GenericImagesData = [
   {
     image:
-      'https://koalaberry.s3.us-east-2.amazonaws.com/koala-berry-toppings-display.webp',
+      'https://koalaberry.s3.us-east-2.amazonaws.com/koala-berry-image-2.webp',
   },
   {
     image:
@@ -9,7 +9,7 @@ const GenericImagesData = [
   },
   {
     image:
-      'https://koalaberry.s3.us-east-2.amazonaws.com/koala-berry-yogurt-machines.webp',
+      'https://koalaberry.s3.us-east-2.amazonaws.com/koala-berry-image-3.webp',
   },
   {
     image:
@@ -17,11 +17,7 @@ const GenericImagesData = [
   },
   {
     image:
-      'https://koalaberry.s3.us-east-2.amazonaws.com/koala-berry-yogurt-bowl-waffle-bowl.webp',
-  },
-  {
-    image:
-      'https://koalaberry.s3.us-east-2.amazonaws.com/koala-berry-empty-bowl.webp',
+      'https://koalaberry.s3.us-east-2.amazonaws.com/koala-berry-image-4.webp',
   },
   {
     image:
@@ -29,7 +25,51 @@ const GenericImagesData = [
   },
   {
     image:
+      'https://koalaberry.s3.us-east-2.amazonaws.com/koala-berry-image-5.webp',
+  },
+  {
+    image:
+      'https://koalaberry.s3.us-east-2.amazonaws.com/koala-berry-image-6.webp',
+  },
+  {
+    image:
+      'https://koalaberry.s3.us-east-2.amazonaws.com/koala-berry-yogurt-bowl-waffle-bowl.webp',
+  },
+  {
+    image:
+      'https://koalaberry.s3.us-east-2.amazonaws.com/koala-berry-image-7.webp',
+  },
+  {
+    image:
+      'https://koalaberry.s3.us-east-2.amazonaws.com/koala-berry-image-8.webp',
+  },
+  {
+    image:
+      'https://koalaberry.s3.us-east-2.amazonaws.com/koala-berry-image-9.webp',
+  },
+  {
+    image:
+      'https://koalaberry.s3.us-east-2.amazonaws.com/koala-berry-image-10.webp',
+  },
+  {
+    image:
+      'https://koalaberry.s3.us-east-2.amazonaws.com/koala-berry-image-11.webp',
+  },
+  {
+    image:
       'https://koalaberry.s3.us-east-2.amazonaws.com/koala-berry-vanilla-bowl.webp',
+  },
+  {
+    image:
+      'https://koalaberry.s3.us-east-2.amazonaws.com/koala-berry-image-12.webp',
+  },
+  {
+    image:
+      'https://koalaberry.s3.us-east-2.amazonaws.com/koala-berry-image-13.webp',
+  },
+  {
+    image:
+      'https://koalaberry.s3.us-east-2.amazonaws.com/koala-berry-image-14.webp',
   },
 ];
 
