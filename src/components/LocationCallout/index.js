@@ -15,10 +15,7 @@ const { border, color, font } = theme;
 
 const LocationCalloutStyle = styled.section``;
 
-const LocationCalloutGrid = styled.div`
-  ${mixins.grid}
-  align-items: center;
-`;
+const LocationCalloutGrid = styled.div``;
 
 const LocationCalloutGridContent = styled.div`
   p {
@@ -76,6 +73,11 @@ const LocationMetaGrid = styled.div`
 const LocationMetaContainer = styled.div`
   font-family: ${font.font};
   margin-bottom: 1.25em;
+
+  div {
+    display: block;
+    margin-bottom: 0.5em;
+  }
 `;
 
 const LocationCallout = () => (
@@ -104,9 +106,19 @@ const LocationCallout = () => (
                 <div>Toledo, OH</div>
               </LocationAddress>
             </LocationMetaContainer>
-            <div className="title">Hours</div>
+            <div className="title">Summer Hours</div>
             <LocationMetaContainer>
-              <div>Open everyday Noon to 10pm</div>
+              <div>Open Everyday</div>
+              <div>12pm - 10pm</div>
+              <div>*Beginning Memorial Day Weekend</div>
+            </LocationMetaContainer>
+            <div className="title">Winter Hours</div>
+            <LocationMetaContainer>
+              <div>Mon - Fri</div>
+              <div>3pm - 10pm</div>
+              <div>Sat & Sun</div>
+              <div>12pm - 10pm</div>
+              <div>*Beginning Labor Day Weekend</div>
             </LocationMetaContainer>
             <div className="title">Contact</div>
             <LocationMetaContainer>

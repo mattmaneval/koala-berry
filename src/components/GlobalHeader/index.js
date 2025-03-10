@@ -19,7 +19,7 @@ const GlobalHeaderStyle = styled.div`
 `;
 
 const GlobalHeader = () => (
-  <GlobalHeaderStyle>Open everyday noon to 10 pm</GlobalHeaderStyle>
+  <GlobalHeaderStyle>Open Mon - Fri 3-10, Sat & Sun 12-10</GlobalHeaderStyle>
 );
 
 export default GlobalHeader;
